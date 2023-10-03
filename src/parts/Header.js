@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
-export default function Header() {
+export default function HeaderTest() {
   const location = useLocation();
 
   const getNavLinkClass = (path) => {
@@ -9,10 +9,12 @@ export default function Header() {
   };
 
   return (
-    <header className="spacing-sm">
+    <header>
       <div className="container-fluid">
-        <nav className="navbar navbar-expand-lg navbar-light">
-          <img src="https://picsum.photos/110/60" alt="" />
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <a className="" href="#">
+            <img src="https://picsum.photos/110/60" alt="" />
+          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -25,8 +27,11 @@ export default function Header() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mr-auto">
+          <div
+            className="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul className="navbar-nav ml-auto">
               <li className={`nav-item${getNavLinkClass('/en')}`}>
                 <a className="nav-link" href="/en">
                   Home
@@ -52,13 +57,13 @@ export default function Header() {
                     className={`dropdown-item${getNavLinkClass(
                       '/en/mobile-dev'
                     )}`}
-                    href="/en/about"
+                    href="/en/mobile-dev"
                   >
                     Mobile Development
                   </a>
                   <a
                     className={`dropdown-item${getNavLinkClass('/en/web-dev')}`}
-                    href="/en/about"
+                    href="/en/web-dev"
                   >
                     Web Development
                   </a>
@@ -66,7 +71,7 @@ export default function Header() {
                     className={`dropdown-item${getNavLinkClass(
                       '/en/backend-dev'
                     )}`}
-                    href="/en/about"
+                    href="/en/backend-dev"
                   >
                     Backend Development
                   </a>
@@ -78,12 +83,10 @@ export default function Header() {
                 </a>
               </li>
             </ul>
-            <div style={{ backgroundColor: 'yellow' }}>
-              <a href="/en">ENG</a>
-              <a href="">
-                <img src="https://picsum.photos/50/22" alt="" />
+            <div className="d-flex ml-auto">
+              <a className="" href="#">
+                <img src="https://picsum.photos/110/60" alt="" />
               </a>
-              <a href="/id">ID</a>
             </div>
           </div>
         </nav>
