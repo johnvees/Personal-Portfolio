@@ -5,40 +5,118 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-@import "functions";
-@import "variables";
-@import "mixins";
-@import "root";
-@import "reboot";
-@import "type";
-@import "images";
-@import "code";
-@import "grid";
-@import "tables";
-@import "forms";
-@import "buttons";
-@import "transitions";
-@import "dropdown";
-@import "button-group";
-@import "input-group";
-@import "custom-forms";
-@import "nav";
-@import "navbar";
-@import "card";
-@import "breadcrumb";
-@import "pagination";
-@import "badge";
-@import "jumbotron";
-@import "alert";
-@import "progress";
-@import "media";
-@import "list-group";
-@import "close";
-@import "toasts";
-@import "modal";
-@import "tooltip";
-@import "popover";
-@import "carousel";
-@import "spinners";
-@import "utilities";
-@import "print";
+@import 'functions';
+@import 'variables';
+@import 'mixins';
+@import 'root';
+@import 'reboot';
+@import 'type';
+@import 'images';
+@import 'code';
+@import 'grid';
+@import 'tables';
+@import 'forms';
+@import 'buttons';
+@import 'transitions';
+@import 'dropdown';
+@import 'button-group';
+@import 'input-group';
+@import 'custom-forms';
+@import 'nav';
+@import 'navbar';
+@import 'card';
+@import 'breadcrumb';
+@import 'pagination';
+@import 'badge';
+@import 'jumbotron';
+@import 'alert';
+@import 'progress';
+@import 'media';
+@import 'list-group';
+@import 'close';
+@import 'toasts';
+@import 'modal';
+@import 'tooltip';
+@import 'popover';
+@import 'carousel';
+@import 'spinners';
+@import 'utilities';
+@import 'print';
+
+section.container-fluid {
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: $white;
+}
+
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  font-family: 'SFPD-Regular';
+  font-size: 20px;
+  z-index: 1000;
+
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+    padding-left: 44px;
+    padding-right: 44px;
+    background-color: $white;
+
+    .navbar {
+      height: 80px;
+
+      div.navbar-collapse {
+        background-color: $white;
+        &.show {
+          padding-left: 16px;
+          margin-left: -60px;
+          margin-right: -60px;
+          div.dropdown-menu {
+            min-width: 10rem;
+          }
+        }
+        &.collapsing {
+          transition: none;
+        }
+      }
+
+      ul.navbar-nav {
+        li.nav-item {
+          &.active {
+            a.nav-link {
+              font-family: 'SFPD-SemiBold';
+              color: $primary;
+            }
+          }
+          a {
+            &.nav-link {
+              color: $dark;
+              padding-right: 12px;
+              padding-left: 12px;
+              &:hover {
+                color: $primary;
+              }
+            }
+          }
+        }
+      }
+
+      div.nav-item {
+        a {
+          &.nav-link {
+            color: $primary;
+            padding-left: 0px;
+          }
+          &.dropdown-item {
+            font-size: 20px;
+          }
+        }
+        div.dropdown-menu {
+          min-width: 10rem;
+        }
+      }
+    }
+  }
+}
