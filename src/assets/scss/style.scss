@@ -62,7 +62,7 @@ section {
 
     .photo {
       position: absolute; /* Position the photo absolutely */
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow effect */
+      // box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow effect */
       z-index: 2; /* Place the photo in front of blobs (higher value than blobs' z-index) */
     }
 
@@ -96,7 +96,8 @@ section {
     }
 
     &.landing {
-      height: 60vh;
+      height: 90vh;
+      max-height: 1000vh;
     }
   }
 }
