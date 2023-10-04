@@ -53,3 +53,50 @@ header {
     background-color: $light;
   }
 }
+
+section {
+  &.container-hero {
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: $indigo;
+
+    .photo {
+      position: absolute; /* Position the photo absolutely */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow effect */
+      z-index: 2; /* Place the photo in front of blobs (higher value than blobs' z-index) */
+    }
+
+    .blob {
+      position: absolute;
+      transform: translate(-20%, 50%);
+      transition: transform 0.3s ease; /* Add a smooth transition effect for movement */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow effect */
+      z-index: 1;
+
+      &.blob-1 {
+        width: 150px;
+        height: 150px;
+        top: 20%;
+        left: 20%;
+      }
+
+      &.blob-2 {
+        width: 120px;
+        height: 120px;
+        top: 70%;
+        left: 50%;
+      }
+
+      &.blob-3 {
+        width: 100px;
+        height: 100px;
+        top: 40%;
+        left: 80%;
+      }
+    }
+
+    &.landing {
+      height: 60vh;
+    }
+  }
+}
