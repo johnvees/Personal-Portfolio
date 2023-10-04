@@ -33,7 +33,7 @@ export default function Hero() {
     <section className="container-hero landing">
       <div className="row" style={{ height: '100%' }}>
         <div
-          className="col-12 col-sm-12 col-md-8 col-lg-6 "
+          className="col-sm-12 col-md-8 col-lg-6 mb-3"
           style={{
             display: 'flex',
             flexDirection: 'column',
@@ -52,11 +52,11 @@ export default function Hero() {
             class="btn btn-warning"
             style={{ width: '50%' }}
           >
-            Primary
+            Get Started
           </button>
         </div>
 
-        <div className="col-12 col-sm-12 col-md-4 col-lg-6  ">
+        <div className="col-sm-12 col-md-4 col-lg-6  mt-3">
           <div style={{ transform: calculateTranslation() }}>
             <img
               className="blob blob-1"
@@ -87,7 +87,6 @@ export default function Hero() {
               className="img-fluid photo"
               src="https://picsum.photos/300/400"
               alt=""
-              style={{ paddingLeft: '60px', paddingRight: '60px' }}
             />
           </div>
         </div>

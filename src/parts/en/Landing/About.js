@@ -1,9 +1,101 @@
-import React from 'react'
+import React from 'react';
 
 export default function About() {
   return (
-    <div>
-      this is for about landing
-    </div>
-  )
+    <section className="container-hero about">
+      <div className="row align-items-center">
+        <div
+          className="col-sm-6 col-md-6 col-lg-6"
+          style={{ width: '100%', display: 'flex', justifyContent: 'center' }}
+        >
+          <img src="https://picsum.photos/500/500" alt="" />
+        </div>
+        <div className="col-sm-6 col-md-6 col-lg-6">
+          <h3>ABOUT ME</h3>
+          <h2>
+            Crafting Digital Excellence: Your Developer for Exceptional Result
+          </h2>
+          <h5>
+            As a developer, I specialize in crafting exceptional digital
+            solutions with ReactJS and React Native, bringing creativity and
+            meticulousness to every project. Let's collaborate to turn your
+            vision into a digital reality that stands out in today's competitive
+            landscape.
+          </h5>
+          <div
+            style={{
+              backgroundColor: '#FFD2B5',
+              width: '100%',
+              height: '100px',
+              borderRadius: '10px',
+              padding: '16px',
+            }}
+          >
+            <h6>5 Complete Project</h6>
+            <h6>
+              Including College Projects, Internship, Bootcamp, Online Courses,
+              Coding events like Hacktoberfest, and etc.
+            </h6>
+          </div>
+          <div
+            style={{
+              backgroundColor: '#FFF1B9',
+              width: '100%',
+              height: '100px',
+              borderRadius: '10px',
+              padding: '16px',
+            }}
+          >
+            <h6>Fresh Graduate</h6>
+            <h6>
+              Project experience are from College Projects, Internship,
+              Bootcamp, Online Courses, Coding events like Hacktoberfest, and
+              etc.
+            </h6>
+          </div>
+          <div className="row align-items-center justify-content-center">
+            <div
+              className="col-3"
+              style={{
+                height: '100%',
+                width: '100%',
+                borderBottom: '1px solid black',
+              }}
+            ></div>
+            <div className="col-auto">
+              <h6>Download my Curriculum Vitae, below</h6>
+            </div>
+            <div
+              className="col-3"
+              style={{
+                height: '100%',
+                width: '100%',
+                borderBottom: '1px solid black',
+              }}
+            ></div>
+          </div>
+          <div className="row">
+            <div className="col-6">
+              <button
+                type="button"
+                class="btn btn-danger"
+                style={{ width: '100%' }}
+              >
+                English Version
+              </button>
+            </div>
+            <div className="col-6">
+              <button
+                type="button"
+                class="btn btn-warning"
+                style={{ width: '100%' }}
+              >
+                Bahasa Version
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

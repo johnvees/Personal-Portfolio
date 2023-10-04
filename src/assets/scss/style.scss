@@ -60,6 +60,14 @@ section {
     padding-right: 60px;
     background-color: $indigo;
 
+    &.landing {
+      height: 90vh;
+      max-height: 1000vh;
+    }
+    &.about {
+      background-color: $light;
+    }
+
     .photo {
       position: absolute; /* Position the photo absolutely */
       // box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow effect */
@@ -93,11 +101,6 @@ section {
         top: 40%;
         left: 80%;
       }
-    }
-
-    &.landing {
-      height: 90vh;
-      max-height: 1000vh;
     }
   }
 }
