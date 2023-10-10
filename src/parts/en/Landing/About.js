@@ -3,14 +3,14 @@ import React from 'react';
 export default function About() {
   return (
     <section className="container-hero about">
-      <div className="row align-items-center">
+      <div className="row align-items-center pt-5 pb-5">
         <div
-          className="col-sm-6 col-md-6 col-lg-6"
-          style={{ width: '100%', display: 'flex', justifyContent: 'center' }}
+          className="col-sm-6 col-md-4 col-lg-6 mb-3"
+          style={{ display: 'flex', justifyContent: 'center' }}
         >
-          <img src="https://picsum.photos/500/500" alt="" />
+          <img src="https://picsum.photos/500/500" alt=""  style={{maxWidth: '100%'}}/>
         </div>
-        <div className="col-sm-6 col-md-6 col-lg-6">
+        <div className="col-sm-6 col-md-8 col-lg-6">
           <h3>ABOUT ME</h3>
           <h2>
             Crafting Digital Excellence: Your Developer for Exceptional Result
@@ -23,10 +23,11 @@ export default function About() {
             landscape.
           </h5>
           <div
+          className='mb-2'
             style={{
               backgroundColor: '#FFD2B5',
               width: '100%',
-              height: '100px',
+              height: '100%',
               borderRadius: '10px',
               padding: '16px',
             }}
@@ -38,10 +39,11 @@ export default function About() {
             </h6>
           </div>
           <div
+          className='mb-2'
             style={{
               backgroundColor: '#FFF1B9',
               width: '100%',
-              height: '100px',
+              height: '100%',
               borderRadius: '10px',
               padding: '16px',
             }}
@@ -53,32 +55,28 @@ export default function About() {
               etc.
             </h6>
           </div>
-          <div className="row align-items-center justify-content-center">
+          <div className="row align-items-center justify-content-center ml-1 mr-1 mb-2">
             <div
-              className="col-3"
+              className="col-sm-3 col-md-3 col-lg-3 d-none d-md-block"
               style={{
-                height: '100%',
-                width: '100%',
                 borderBottom: '1px solid black',
               }}
             ></div>
-            <div className="col-auto">
+            <div className="col-sm-6 col-md-6 col-lg-6 text-center">
               <h6>Download my Curriculum Vitae, below</h6>
             </div>
             <div
-              className="col-3"
+              className="col-sm-3 col-md-3 col-lg-3 d-none d-md-block"
               style={{
-                height: '100%',
-                width: '100%',
                 borderBottom: '1px solid black',
               }}
             ></div>
           </div>
           <div className="row">
-            <div className="col-6">
+            <div className="col-6 ">
               <button
                 type="button"
-                class="btn btn-danger"
+                class="btn btn-danger "
                 style={{ width: '100%' }}
               >
                 English Version
