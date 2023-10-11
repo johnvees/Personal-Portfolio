@@ -58,16 +58,17 @@ section {
   &.container-hero {
     padding-left: 60px;
     padding-right: 60px;
-    background-color: $indigo;
+    background-color: $light;
 
     &.landing {
       height: 90vh;
       max-height: 1000vh;
+      background-color: $indigo;
     }
-    
-    &.about {
-      background-color: $light;
-    }
+
+    // &.about {
+    //   background-color: $light;
+    // }
 
     .photo {
       position: absolute; /* Position the photo absolutely */
