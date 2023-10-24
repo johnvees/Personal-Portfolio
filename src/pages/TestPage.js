@@ -30,7 +30,7 @@ export default function TestPage() {
               src={item.imageUrl}
               alt={`Item ${item.id}`}
               style={{ width: '100%', height: '100%' }}
-            />
+            />$$
           </div>
         ))}
       </div>

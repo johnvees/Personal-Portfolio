@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 
 export default function Project() {
-  
-
   return (
     <section className="container-hero project pt-5 pb-5">
       <div className="row align-items-center mb-5">
@@ -23,7 +21,70 @@ export default function Project() {
           </div>
         </div>
       </div>
-      
+
+      <div
+        id="carouselExampleFade"
+        className="carousel slide carousel-fade"
+        data-ride="carousel"
+        style={{ height: '100%' }}
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleFade"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleFade" data-slide-to="1"></li>
+          <li data-target="#carouselExampleFade" data-slide-to="2"></li>
+        </ol>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img
+              src="https://picsum.photos/1500/500"
+              className="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              src="https://picsum.photos/1500/500"
+              className="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              src="https://picsum.photos/1500/500"
+              className="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-target="#carouselExampleFade"
+          data-slide="prev"
+        >
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="sr-only">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-target="#carouselExampleFade"
+          data-slide="next"
+        >
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="sr-only">Next</span>
+        </button>
+      </div>
     </section>
   );
 }

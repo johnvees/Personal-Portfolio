@@ -8,7 +8,11 @@ export default function About() {
           className="col-sm-6 col-md-4 col-lg-6 mb-3"
           style={{ display: 'flex', justifyContent: 'center' }}
         >
-          <img src="https://picsum.photos/500/500" alt=""  style={{maxWidth: '100%'}}/>
+          <img
+            src="https://picsum.photos/500/500"
+            alt=""
+            style={{ maxWidth: '100%' }}
+          />
         </div>
         <div className="col-sm-6 col-md-8 col-lg-6">
           <h3>ABOUT ME</h3>
@@ -23,7 +27,7 @@ export default function About() {
             landscape.
           </h5>
           <div
-          className='mb-2'
+            className="mb-2"
             style={{
               backgroundColor: '#FFD2B5',
               width: '100%',
@@ -39,7 +43,7 @@ export default function About() {
             </h6>
           </div>
           <div
-          className='mb-2'
+            className="mb-2"
             style={{
               backgroundColor: '#FFF1B9',
               width: '100%',
@@ -76,7 +80,7 @@ export default function About() {
             <div className="col-6 ">
               <button
                 type="button"
-                class="btn btn-danger "
+                className="btn btn-danger "
                 style={{ width: '100%' }}
               >
                 English Version
@@ -85,7 +89,7 @@ export default function About() {
             <div className="col-6">
               <button
                 type="button"
-                class="btn btn-warning"
+                className="btn btn-warning"
                 style={{ width: '100%' }}
               >
                 Bahasa Version
