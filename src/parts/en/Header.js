@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
-export default function HeaderTest() {
+export default function Header() {
   const location = useLocation();
 
   const getNavLinkClass = (path) => {
