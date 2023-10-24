@@ -5,6 +5,7 @@ import About from '../../parts/en/Landing/About';
 import Service from '../../parts/en/Landing/Service';
 import Project from '../../parts/en/Landing/Project';
 import Collaborate from '../../parts/en/Landing/Collaborate';
+import Footer from '../../parts/en/Footer';
 
 export default class LandingPage extends Component {
   render() {
@@ -16,6 +17,7 @@ export default class LandingPage extends Component {
         <Service></Service>
         <Project></Project>
         <Collaborate></Collaborate>
+        <Footer {...this.props}></Footer>
       </div>
     );
   }

@@ -70,6 +70,11 @@ section {
       height: 50vh;
     }
 
+    &.footer {
+      height: 22vh;
+      background-color: $indigo;
+    }
+
     // &.about {
     //   background-color: $light;
     // }
