@@ -49,7 +49,7 @@ export default function Hero() {
           </h4>
           <button
             type="button"
-            class="btn btn-warning"
+            className="btn btn-warning"
             style={{ width: '50%' }}
           >
             Get Started

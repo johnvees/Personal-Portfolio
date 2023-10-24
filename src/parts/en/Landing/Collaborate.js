@@ -2,11 +2,15 @@ import React from 'react';
 
 export default function Collaborate() {
   return (
-    <section className="container-hero collaborate text-center">
+    <section className="container-hero collaborate">
+      <img
+        src="https://picsum.photos/200/170"
+        alt=""
+        style={{ maxWidth: '100%' }}
+      />
       <div
         className=""
         style={{
-          height: '100%',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
@@ -22,7 +26,7 @@ export default function Collaborate() {
             <div className="col-sm-8 col-md-8 col-lg-8">
               <button
                 type="button"
-                class="btn btn-primary "
+                className="btn btn-primary "
                 style={{ width: '100%' }}
               >
                 Get In Touch With Me!
@@ -30,6 +34,15 @@ export default function Collaborate() {
             </div>
             <div className="col-sm-2 col-md-2 col-lg-2 d-none d-md-block"></div>
           </div>
+        </div>
+      </div>
+      <div className="row" style={{ marginRight: '0px' }}>
+        <div className="ml-auto">
+          <img
+            src="https://picsum.photos/200/170"
+            alt=""
+            style={{ maxWidth: '100%' }}
+          />
         </div>
       </div>
     </section>
