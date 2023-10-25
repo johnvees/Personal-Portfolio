@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <section className="container-hero about">
+    <section className="container-landing about">
       <div className="row align-items-center pt-5 pb-5">
         <div
           className="col-sm-6 col-md-4 col-lg-6 mb-3"

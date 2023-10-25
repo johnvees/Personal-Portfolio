@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Collaborate() {
   return (
-    <section className="container-hero collaborate">
+    <section className="container-landing collaborate">
       <img
         src="https://picsum.photos/200/170"
         alt=""

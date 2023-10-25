@@ -30,10 +30,10 @@ export default function Hero() {
   };
 
   return (
-    <section className="container-hero landing">
+    <section className="container-landing hero">
       <div className="row" style={{ height: '100%' }}>
         <div
-          className="col-sm-12 col-md-8 col-lg-6 mb-3"
+          className="col-sm-12 col-md-8 col-lg-6"
           style={{
             display: 'flex',
             flexDirection: 'column',
@@ -56,7 +56,7 @@ export default function Hero() {
           </button>
         </div>
 
-        <div className="col-sm-12 col-md-4 col-lg-6  mt-3">
+        <div className="col-sm-12 col-md-4 col-lg-6">
           <div style={{ transform: calculateTranslation() }}>
             <img
               className="blob blob-1"

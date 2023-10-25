@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <section className="container-hero footer ">
+    <section className="container-landing footer ">
       <div className="row pt-4">
         <div className="col-4 ">
           <h2>Connect With Me and Create Together!</h2>
