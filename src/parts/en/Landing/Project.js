@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 export default function Project() {
   return (
-    <section className="container-hero project pt-5 pb-5">
+    <section className="container-landing project pt-5 pb-5">
       <div className="row align-items-center mb-5">
         <div className="col-sm-6 col-lg-6 flex-start">
           <h3>PROJECTS</h3>

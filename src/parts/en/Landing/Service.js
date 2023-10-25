@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Service() {
   return (
-    <section className="container-hero mb-5 mt-5">
+    <section className="container-landing mb-5 mt-5">
       <div className="col text-center">
         <h3>SERVICES</h3>
         <h2>
