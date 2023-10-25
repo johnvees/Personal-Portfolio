@@ -5,7 +5,7 @@ export default function Project() {
     <section className="container-landing project pt-5 pb-5">
       <div className="row align-items-center mb-5">
         <div className="col-sm-6 col-lg-6 flex-start">
-          <h3>PROJECTS</h3>
+          <h4>PROJECTS</h4>
           <h2>My Latest Projects Showcase</h2>
         </div>
         <div className=" d-flex ml-auto">

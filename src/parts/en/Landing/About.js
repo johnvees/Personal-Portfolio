@@ -15,7 +15,7 @@ export default function About() {
           />
         </div>
         <div className="col-sm-6 col-md-8 col-lg-6">
-          <h3>ABOUT ME</h3>
+          <h4>ABOUT ME</h4>
           <h2>
             Crafting Digital Excellence: Your Developer for Exceptional Result
           </h2>

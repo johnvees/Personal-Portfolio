@@ -4,7 +4,7 @@ export default function Service() {
   return (
     <section className="container-landing mb-5 mt-5">
       <div className="col text-center">
-        <h3>SERVICES</h3>
+        <h4>SERVICES</h4>
         <h2>
           Comprehensive Development Expertise: Your Partner for Mobile, Web, and
           Backend Solutions
