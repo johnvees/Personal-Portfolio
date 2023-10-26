@@ -43,14 +43,69 @@
 @import 'utilities';
 @import 'print';
 
+@font-face {
+  font-family: 'SFPD-Regular';
+  src: local('San Francisco Pro Display'),
+    url(../../fonts/sfprodisplay_regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SFPD-Medium';
+  src: local('San Francisco Pro Display'),
+    url(../../fonts/sfprodisplay_medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SFPD-SemiBold';
+  src: local('San Francisco Pro Display'),
+    url(../../fonts/sfprodisplay_semibold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-SemiBold';
+  src: local('Gilroy'), url(../../fonts/gilroy_semibold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: local('Gilroy'), url(../../fonts/gilroy_bold.otf) format('opentype');
+}
+
 header {
   width: 100%;
   z-index: 1000;
   background-color: $light;
+  font-family: 'SFPD-Regular';
+  font-size: 20px;
+
   .container-fluid {
-    padding-left: 60px;
-    padding-right: 60px;
-    background-color: $light;
+    padding: 0px;
+
+    ul.navbar-nav {
+      li.nav-item {
+        &.active {
+          a.nav-link {
+            font-family: 'SFPD-SemiBold';
+            color: $black;
+          }
+        }
+        a {
+          &.nav-link {
+            color: $secondary;
+            &:hover {
+              color: $black;
+            }
+          }
+        }
+        a.dropdown-item {
+          color: $black;
+          &.active {
+            color: $white;
+            background-color: $indigo;
+          }
+        }
+      }
+    }
   }
 }
 

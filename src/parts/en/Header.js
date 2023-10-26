@@ -13,7 +13,7 @@ export default function Header() {
       <div className="container-fluid">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <a className="" href="#">
-            <img src="https://picsum.photos/110/60" alt="" />
+            <img src="https://picsum.photos/110/30" alt="" />
           </a>
           <button
             className="navbar-toggler"
@@ -42,7 +42,9 @@ export default function Header() {
                   About
                 </a>
               </li>
-              <li className={`nav-item${getNavLinkClass('/en/web-dev')} dropdown`}>
+              <li
+                className={`nav-item${getNavLinkClass('/en/web-dev')} dropdown`}
+              >
                 <a
                   className="nav-link dropdown-toggle"
                   href="#"
@@ -85,7 +87,7 @@ export default function Header() {
             </ul>
             <div className="d-flex ml-auto">
               <a className="" href="#">
-                <img src="https://picsum.photos/110/60" alt="" />
+                <img src="https://picsum.photos/110/30" alt="" />
               </a>
             </div>
           </div>
