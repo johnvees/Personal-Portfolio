@@ -81,7 +81,21 @@ header {
   .container-fluid {
     padding: 0px;
 
+    .container-logo {
+      padding-left: 16px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      height: 64px;
+      background-size: cover;
+
+      img {
+        width: 120px;
+        height: 100%;
+      }
+    }
+
     ul.navbar-nav {
+      padding-left: 16px;
       li.nav-item {
         &.active {
           a.nav-link {
@@ -102,6 +116,27 @@ header {
           &.active {
             color: $white;
             background-color: $indigo;
+          }
+        }
+      }
+    }
+
+    .container-language {
+      background-color: $yellow;
+      height: 64px;
+      width: 180px;
+
+      a {
+        text-decoration: none;
+        div.button {
+          height: 100%;
+          h5 {
+            color: $indigo;
+            font-family: 'SFPD-SemiBold';
+            width: fit-content;
+          }
+          img {
+            width: 40%;
           }
         }
       }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import LanguageHandler from '../../assets/images/changeLanguageButton.png';
 
 export default function Header() {
   const location = useLocation();
@@ -11,12 +12,15 @@ export default function Header() {
   return (
     <header>
       <div className="container-fluid">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <a className="" href="#">
-            <img src="https://picsum.photos/110/30" alt="" />
-          </a>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light p-0">
+          <div className="container-logo">
+            <a href="/en">
+              <img src="https://picsum.photos/110/110" alt="" />
+            </a>
+          </div>
+
           <button
-            className="navbar-toggler"
+            className="navbar-toggler mr-3"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -43,7 +47,9 @@ export default function Header() {
                 </a>
               </li>
               <li
-                className={`nav-item${getNavLinkClass('/en/web-dev')} dropdown`}
+                className={`nav-item${getNavLinkClass(
+                  '/en/web-dev' || '/en/mobile-dev' || '/en/backend-dev'
+                )} dropdown`}
               >
                 <a
                   className="nav-link dropdown-toggle"
@@ -86,9 +92,15 @@ export default function Header() {
               </li>
             </ul>
             <div className="d-flex ml-auto">
-              <a className="" href="#">
-                <img src="https://picsum.photos/110/30" alt="" />
-              </a>
+              <div className="container-language p-0">
+                <a href="/id">
+                  <div className="button row align-items-center justify-content-center m-0 p-0">
+                    <h5 className="m-0 mr-2">EN</h5>
+                    <img src={LanguageHandler} alt="" />
+                    <h5 className="m-0 ml-2">ID</h5>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </nav>
