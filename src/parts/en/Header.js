@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import LanguageHandler from '../../assets/images/changeLanguageButton.png';
+import LanguageHandler from '../../assets/images/changeLanguageButton.webp';
+import LogoBlack from '../../assets/images/logoBlack.svg';
 
 export default function Header() {
   const location = useLocation();
@@ -15,7 +16,7 @@ export default function Header() {
         <nav className="navbar navbar-expand-lg navbar-light bg-light p-0">
           <div className="container-logo">
             <a href="/en">
-              <img src="https://picsum.photos/110/110" alt="" />
+              <img src={LogoBlack} alt="" />
             </a>
           </div>
 
