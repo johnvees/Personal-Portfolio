@@ -169,8 +169,31 @@ section {
     }
 
     &.footer {
-      height: 22vh;
+      // height: 22vh;
       background-color: $indigo;
+      max-height: 100vh;
+
+      a {
+        text-decoration: none;
+      }
+
+      h2 {
+        font-size: 42px;
+        color: $white;
+        font-family: 'Gilroy-Bold';
+      }
+
+      h5 {
+        font-size: 20px;
+        color: $white;
+        font-family: 'SFPD-Semibold';
+      }
+
+      p {
+        font-size: 16px;
+        color: $white;
+        font-family: 'SFPD-Regular';
+      }
     }
 
     .photo {
