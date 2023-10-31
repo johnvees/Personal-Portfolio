@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <header>
       <div className="container-fluid">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light p-0">
+        <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-lg p-0">
           <div className="container-logo">
             <a href="/en">
               <img src={LogoBlack} alt="" />

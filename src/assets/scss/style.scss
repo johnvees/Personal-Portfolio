@@ -151,9 +151,10 @@ section {
     background-color: $light;
 
     &.hero {
-      height: 90vh;
+      height: 100vh;
       max-height: 1000vh;
       background-color: $indigo;
+      margin-top: 64px;
     }
 
     &.collaborate {
