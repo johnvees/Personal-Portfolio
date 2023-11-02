@@ -23,7 +23,11 @@ export default function Hero() {
 
         <div className="col-sm-12 col-md-4 col-lg-6 d-flex flex-column mt-auto">
           <div className="align-self-end">
-            <img className="img-fluid" src={ILHeroPict} alt="Hero Picture" />
+            <img
+              className="img-fluid"
+              src={ILHeroPict}
+              alt="Landing Hero Illustration"
+            />
           </div>
         </div>
       </div>
