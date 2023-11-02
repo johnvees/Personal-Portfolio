@@ -244,6 +244,38 @@ section {
       }
     }
 
+    &.service {
+      h4 {
+        font-family: 'SFPD-Bold';
+        font-size: 24px;
+        color: $indigo;
+      }
+
+      h2 {
+        font-family: 'Gilroy-Bold';
+        font-size: 42px;
+        color: $black;
+      }
+
+      h5 {
+        font-family: 'SFPD-Regular';
+        font-size: 20px;
+        color: $dark;
+      }
+
+      h3 {
+        font-family: 'Gilroy-Semibold';
+        font-size: 32px;
+        color: $black;
+      }
+
+      .container-service {
+        background-color: #E7E7E7;
+        border-radius: 10px;
+        height: 460px;
+      }
+    }
+
     &.collaborate {
       height: 50vh;
     }
