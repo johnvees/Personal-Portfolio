@@ -1,17 +1,20 @@
 import React from 'react';
+import ICMobileDev from '../../../assets/images/iconMobileDev.svg'
+import ICWebDev from '../../../assets/images/iconWebDev.svg'
+import ICBackendDev from '../../../assets/images/iconBackendDev.svg'
 
 export default function Service() {
   return (
-    <section className="container-landing mb-5 mt-5">
-      <div className="col text-center">
+    <section className="container-landing service pb-5 pt-5">
+      <div className="col-sm-12 col-md-12 col-lg-12 text-center">
         <h4>SERVICES</h4>
         <h2>
           Comprehensive Development Expertise: Your Partner for Mobile, Web, and
           Backend Solutions
         </h2>
         <div className="row align-items-center mb-5">
-          <div className="col-2"></div>
-          <div className="col-8">
+          <div className="col-md-1 col-lg-2 d-none d-md-block"></div>
+          <div className="col-sm-12 col-md-10 col-lg-8">
             <h5>
               As a developer, I'm passionate about crafting dynamic solutions
               spanning mobile apps, web design, and backend systems. Let's
@@ -20,18 +23,13 @@ export default function Service() {
               the tech landscape.
             </h5>
           </div>
-          <div className="col-2"></div>
+          <div className="col-md-1 col-lg-2 d-none d-md-block"></div>
         </div>
         <div className="row justify-content-center">
           <div
-            className="col-3 p-4"
-            style={{
-              backgroundColor: '#E7E7E7',
-              borderRadius: '10px',
-              height: '460px',
-            }}
+            className="container-service col-sm-12 col-md-12 col-lg-3 p-4 ml-2 mr-2 mb-3"
           >
-            <img className="mb-4" src="https://picsum.photos/140/150" alt="" />
+            <img className="mb-4" src={ICMobileDev} alt="Mobile Development Icon" />
             <h3 className="h2 mb-3">Mobile Development</h3>
             <h5>
               Using React Native, I create mobile apps that seamlessly run on
@@ -40,14 +38,9 @@ export default function Service() {
             </h5>
           </div>
           <div
-            className="col-3 p-4 ml-4 mr-4"
-            style={{
-              backgroundColor: '#E7E7E7',
-              borderRadius: '10px',
-              height: '460px',
-            }}
+            className="container-service col-sm-12 col-md-12 col-lg-3 p-4 ml-2 mr-2 mb-3"
           >
-            <img className="mb-4" src="https://picsum.photos/140/150" alt="" />
+            <img className="mb-4" src={ICWebDev} alt="Web Development Icon" />
             <h3 className="h2 mb-3">Web Development</h3>
             <h5>
               Utilizing the MERN stack, I develop web applications that embody
@@ -56,14 +49,9 @@ export default function Service() {
             </h5>
           </div>
           <div
-            className="col-3 p-4"
-            style={{
-              backgroundColor: '#E7E7E7',
-              borderRadius: '10px',
-              height: '460px',
-            }}
+            className="container-service col-sm-12 col-md-12 col-lg-3 p-4 ml-2 mr-2 mb-3"
           >
-            <img className="mb-4" src="https://picsum.photos/140/150" alt="" />
+            <img className="mb-4" src={ICBackendDev} alt="Backend Development Icon" />
             <h3 className="h2 mb-3">Backend Development</h3>
             <h5>
               With NodeJS and the ExpressJS framework, I specialize in crafting
