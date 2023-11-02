@@ -151,10 +151,31 @@ section {
     background-color: $light;
 
     &.hero {
-      height: 100vh;
+      // height: 100vh;
       max-height: 1000vh;
       background-color: $indigo;
       margin-top: 64px;
+
+      h1 {
+        font-family: 'Gilroy-Bold';
+        font-size: 58px;
+        color: $white;
+      }
+
+      h4 {
+        font-family: 'SFPD-Regular';
+        font-size: 24px;
+        color: $white;
+      }
+
+      button {
+        &.btn {
+          &.btn-warning {
+            font-family: 'Gilroy-Bold';
+            color: $black;
+          }
+        }
+      }
     }
 
     &.collaborate {
@@ -196,39 +217,43 @@ section {
         font-family: 'SFPD-Regular';
       }
     }
+  }
+}
 
-    .photo {
-      position: absolute; /* Position the photo absolutely */
-      // box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow effect */
-      z-index: 2; /* Place the photo in front of blobs (higher value than blobs' z-index) */
+@media screen and (max-width: 425px) {
+  section.container-landing {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+
+    &.hero {
+      h1 {
+        font-size: 42px !important;
+      }
     }
+  }
+}
 
-    .blob {
-      position: absolute;
-      transform: translate(-20%, 50%);
-      transition: transform 0.3s ease; /* Add a smooth transition effect for movement */
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow effect */
-      z-index: 1;
+// @media screen and (max-width: 768px) {
+//   section.container-landing {
+//     padding-left: 24px;
+//     padding-right: 24px;
 
-      &.blob-1 {
-        width: 150px;
-        height: 150px;
-        top: 20%;
-        left: 20%;
-      }
+//     &.hero {
+//       h1 {
+//         font-size: 46px;
+//       }
+//     }
+//   }
+// }
 
-      &.blob-2 {
-        width: 120px;
-        height: 120px;
-        top: 70%;
-        left: 50%;
-      }
+@media screen and (max-width: 1024px) {
+  section.container-landing {
+    padding-left: 32px;
+    padding-right: 32px;
 
-      &.blob-3 {
-        width: 100px;
-        height: 100px;
-        top: 40%;
-        left: 80%;
+    &.hero {
+      h1 {
+        font-size: 46px;
       }
     }
   }
