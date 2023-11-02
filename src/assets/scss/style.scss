@@ -62,6 +62,12 @@
 }
 
 @font-face {
+  font-family: 'SFPD-Bold';
+  src: local('San Francisco Pro Display'),
+    url(../../fonts/sfprodisplay_bold.ttf) format('truetype');
+}
+
+@font-face {
   font-family: 'Gilroy-SemiBold';
   src: local('Gilroy'), url(../../fonts/gilroy_semibold.otf) format('opentype');
 }
@@ -69,6 +75,22 @@
 @font-face {
   font-family: 'Gilroy-Bold';
   src: local('Gilroy'), url(../../fonts/gilroy_bold.otf) format('opentype');
+}
+
+button {
+  &.btn {
+    &.btn-warning {
+      font-family: 'Gilroy-Bold';
+      color: $black;
+      background-color: $brightyellow;
+    }
+
+    &.btn-danger {
+      font-family: 'Gilroy-Bold';
+      color: $white;
+      background-color: $orange;
+    }
+  }
 }
 
 header {
@@ -167,23 +189,63 @@ section {
         font-size: 24px;
         color: $white;
       }
+    }
 
-      button {
-        &.btn {
-          &.btn-warning {
-            font-family: 'Gilroy-Bold';
-            color: $black;
-          }
+    &.about {
+      background-color: $light;
+
+      h4 {
+        font-family: 'SFPD-Bold';
+        font-size: 24px;
+        color: $indigo;
+      }
+
+      h2 {
+        font-family: 'Gilroy-Bold';
+        font-size: 42px;
+        color: $black;
+      }
+
+      h5 {
+        font-family: 'SFPD-Regular';
+        font-size: 20px;
+        color: $dark;
+      }
+
+      h6 {
+        font-family: 'SFPD-Regular';
+        font-size: 18px;
+        color: $dark;
+
+        &.title {
+          font-family: 'Gilroy-Semibold';
+          color: $black;
         }
+
+        &.info {
+          font-size: 12px;
+        }
+      }
+
+      .container-project {
+        background-color: #ffd2b5;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        padding: 16px;
+      }
+
+      .container-experience {
+        background-color: #fff1b9;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        padding: 16px;
       }
     }
 
     &.collaborate {
       height: 50vh;
-    }
-
-    &.about {
-      background-color: $light;
     }
 
     &.project {
@@ -221,13 +283,15 @@ section {
 }
 
 @media screen and (max-width: 425px) {
-  section.container-landing {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+  section {
+    &.container-landing {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
 
-    &.hero {
-      h1 {
-        font-size: 42px !important;
+      &.hero {
+        h1 {
+          font-size: 42px !important;
+        }
       }
     }
   }
@@ -247,13 +311,15 @@ section {
 // }
 
 @media screen and (max-width: 1024px) {
-  section.container-landing {
-    padding-left: 32px;
-    padding-right: 32px;
+  section {
+    &.container-landing {
+      padding-left: 32px;
+      padding-right: 32px;
 
-    &.hero {
-      h1 {
-        font-size: 46px;
+      &.hero {
+        h1 {
+          font-size: 46px;
+        }
       }
     }
   }
