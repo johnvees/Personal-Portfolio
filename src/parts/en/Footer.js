@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="col-sm-0 col-lg-3"></div>
         <div className="col-sm-12 col-lg-5">
           <div className="row">
-            <div className="col-sm-12 col-lg-5">
+            <div className="col-sm-12 col-md-6 col-lg-5">
               <a href="https://www.linkedin.com/in/yohanesvelly/">
                 <div className="row align-items-center ml-0 mb-2">
                   <img src={ICLinkedin} alt="LinkedIn Logo" className="mr-3" />
@@ -40,7 +40,7 @@ export default function Footer() {
                 </div>
               </a>
             </div>
-            <div className="col-sm-12 col-lg-7">
+            <div className="col-sm-12 col-md-6 col-lg-7">
               <a href="mailto:yohanesvelly23@gmail.com">
                 <div className="row align-items-center ml-0 mb-2">
                   <img src={ICEmail} alt="Email Logo" className="mr-3" />

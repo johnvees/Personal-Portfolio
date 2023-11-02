@@ -90,6 +90,12 @@ button {
       color: $white;
       background-color: $orange;
     }
+
+    &.btn-primary {
+      font-family: 'Gilroy-Bold';
+      color: $white;
+      background-color: $indigo;
+    }
   }
 }
 
@@ -270,7 +276,7 @@ section {
       }
 
       .container-service {
-        background-color: #E7E7E7;
+        background-color: #e7e7e7;
         border-radius: 10px;
         height: 460px;
       }
@@ -278,6 +284,12 @@ section {
 
     &.collaborate {
       height: 50vh;
+
+      h1 {
+        font-family: 'Gilroy-Bold';
+        font-size: 58px;
+        color: $black;
+      }
     }
 
     &.project {
@@ -320,10 +332,8 @@ section {
       padding-left: 16px !important;
       padding-right: 16px !important;
 
-      &.hero {
-        h1 {
-          font-size: 42px !important;
-        }
+      h1 {
+        font-size: 42px !important;
       }
     }
   }
@@ -348,10 +358,8 @@ section {
       padding-left: 32px;
       padding-right: 32px;
 
-      &.hero {
-        h1 {
-          font-size: 46px;
-        }
+      h1 {
+        font-size: 46px;
       }
     }
   }

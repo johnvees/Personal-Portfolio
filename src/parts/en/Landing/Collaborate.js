@@ -1,22 +1,24 @@
 import React from 'react';
+import ILBlobTop from '../../../assets/images/ilCollaborateTop.webp';
+import ILBlobBottom from '../../../assets/images/ilCollaborateBottom.webp';
 
 export default function Collaborate() {
   return (
     <section className="container-landing collaborate">
       <img
-        src="https://picsum.photos/200/170"
-        alt=""
-        style={{ maxWidth: '100%' }}
+        src={ILBlobTop}
+        alt="Blob Illustration Collaborate"
+        style={{ maxWidth: '100px' }}
       />
       <div
-        className=""
         style={{
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          height: '55%',
         }}
       >
-        <div>
+        <div className='text-center'>
           <h1>
             Transform Your Ideas into Digital Magic Lets Collaborate for
             Success!
@@ -26,7 +28,7 @@ export default function Collaborate() {
             <div className="col-sm-8 col-md-8 col-lg-8">
               <button
                 type="button"
-                className="btn btn-primary "
+                className="btn btn-primary"
                 style={{ width: '100%' }}
               >
                 Get In Touch With Me!
@@ -39,9 +41,9 @@ export default function Collaborate() {
       <div className="row" style={{ marginRight: '0px' }}>
         <div className="ml-auto">
           <img
-            src="https://picsum.photos/200/170"
-            alt=""
-            style={{ maxWidth: '100%' }}
+            src={ILBlobBottom}
+            alt="Blob Illustration Collaborate"
+            style={{ maxWidth: '100px' }}
           />
         </div>
       </div>
