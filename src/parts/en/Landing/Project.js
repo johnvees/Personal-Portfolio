@@ -4,7 +4,7 @@ export default function Project() {
   return (
     <section className="container-landing project pt-5 pb-5">
       <div className="row align-items-center mb-5">
-        <div className="col-sm-6 col-lg-6 flex-start">
+        <div className="col-sm-12 col-lg-6 flex-start">
           <h4>PROJECTS</h4>
           <h2>My Latest Projects Showcase</h2>
         </div>
