@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
+import ILCarouselWeb from '../../../assets/images/carouselWeb.webp';
+import ILCarouselMobile from '../../../assets/images/carouselMobile.webp';
+import ILCarouselBackend from '../../../assets/images/carouselBackend.webp';
 
 export default function Project() {
+  const carouselImages = [
+    ILCarouselWeb,
+    ILCarouselMobile,
+    ILCarouselBackend,
+  ];
+
   return (
     <section className="container-landing project pt-5 pb-5">
       <div className="row align-items-center mb-5">
-        <div className="col-sm-6 col-lg-6 flex-start">
+        <div className="col-sm-12 col-lg-6 flex-start">
           <h4>PROJECTS</h4>
           <h2>My Latest Projects Showcase</h2>
         </div>
@@ -28,37 +37,29 @@ export default function Project() {
         data-ride="carousel"
         style={{ height: '100%' }}
       >
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carouselExampleFade"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselExampleFade" data-slide-to="1"></li>
-          <li data-target="#carouselExampleFade" data-slide-to="2"></li>
+        <ol className="carousel-indicators">
+          {carouselImages.map((image, index) => (
+            <li
+              key={index}
+              data-target="#carouselExampleFade"
+              data-slide-to={index}
+              className={index === 0 ? 'active' : ''}
+            ></li>
+          ))}
         </ol>
         <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img
-              src="https://picsum.photos/1500/500"
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://picsum.photos/1500/500"
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https://picsum.photos/1500/500"
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
+          {carouselImages.map((image, index) => (
+            <div
+              key={index}
+              className={`carousel-item ${index === 0 ? 'active' : ''}`}
+            >
+              <img
+                src={image}
+                className="d-block w-100"
+                alt={`Slide ${index + 1}`}
+              />
+            </div>
+          ))}
         </div>
         <button
           className="carousel-control-prev"
