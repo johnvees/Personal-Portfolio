@@ -2,6 +2,14 @@ import React, { useState, useEffect } from 'react';
 import ILHeroPict from '../../../assets/images/heroPictLanding.webp';
 
 export default function Hero() {
+  const handleScroll = () => {
+    // Scroll to the top of the page when the button is clicked
+    window.scrollTo({
+      top: 1000,
+      behavior: 'smooth', // Optional: Adds smooth scrolling animation
+    });
+  };
+
   return (
     <section className="container-landing hero">
       <div className="row align-items-center" style={{ height: '100%' }}>
@@ -14,8 +22,8 @@ export default function Hero() {
             portfolio
           </h4>
           <button
-            type="button"
             className="btn btn-warning col-sm-12 col-md-8 col-lg-6"
+            onClick={handleScroll}
           >
             Get Started
           </button>
