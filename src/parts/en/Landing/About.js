@@ -2,6 +2,54 @@ import React from 'react';
 import ILAboutPict from '../../../assets/images/aboutPictLanding.webp';
 
 export default function About() {
+  const handleDownloadID = () => {
+    // Specify the URL of your existing PDF file
+    const pdfUrl =
+      'https://drive.google.com/u/0/uc?id=1lwcsZ_bYmBlDOxswp_3z4Hb91geejz9K&export=download';
+
+    // Create a link element
+    const link = document.createElement('a');
+
+    // Set the href attribute to the PDF file URL
+    link.href = pdfUrl;
+
+    // Specify the download attribute with the desired file name
+    link.download = 'cvID.pdf';
+
+    // Append the link to the document
+    document.body.appendChild(link);
+
+    // Trigger a click on the link to start the download
+    link.click();
+
+    // Remove the link from the document
+    document.body.removeChild(link);
+  };
+
+  const handleDownloadEN = () => {
+    // Specify the URL of your existing PDF file
+    const pdfUrl =
+      'https://drive.google.com/u/0/uc?id=1bXbPr9egxvd2zvWvCcmXB8HfxGBWbxDS&export=download';
+
+    // Create a link element
+    const link = document.createElement('a');
+
+    // Set the href attribute to the PDF file URL
+    link.href = pdfUrl;
+
+    // Specify the download attribute with the desired file name
+    link.download = 'cvEN.pdf';
+
+    // Append the link to the document
+    document.body.appendChild(link);
+
+    // Trigger a click on the link to start the download
+    link.click();
+
+    // Remove the link from the document
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="container-landing about">
       <div className="row align-items-center pt-5 pb-5">
@@ -59,18 +107,18 @@ export default function About() {
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6 mb-2">
               <button
-                type="button"
                 className="btn btn-danger"
                 style={{ width: '100%' }}
+                onClick={handleDownloadEN}
               >
                 English Version
               </button>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-6">
               <button
-                type="button"
                 className="btn btn-warning"
                 style={{ width: '100%' }}
+                onClick={handleDownloadID}
               >
                 Bahasa Version
               </button>
