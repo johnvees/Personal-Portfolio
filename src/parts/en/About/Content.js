@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Content() {
   return (
-    <section className="container-about content">
+    <section className="container-about content pt-5 pb-5">
       <h2>Working Experience</h2>
       <div
         style={{
@@ -29,6 +29,7 @@ export default function Content() {
         </div>
       </div>
       <div
+        className="mt-3 mb-5"
         style={{
           borderBottom: '1px solid black',
         }}
@@ -50,6 +51,7 @@ export default function Content() {
         </div>
       </div>
       <div
+        className="mt-3"
         style={{
           borderBottom: '1px solid black',
         }}
@@ -64,6 +66,7 @@ export default function Content() {
         </div>
       </div>
       <div
+        className="mt-3 mb-5"
         style={{
           borderBottom: '1px solid black',
         }}
@@ -96,6 +99,7 @@ export default function Content() {
         </div>
       </div>
       <div
+        className="mt-3"
         style={{
           borderBottom: '1px solid black',
         }}
@@ -118,6 +122,7 @@ export default function Content() {
         </div>
       </div>
       <div
+        className="mt-3"
         style={{
           borderBottom: '1px solid black',
         }}
@@ -149,6 +154,7 @@ export default function Content() {
         </div>
       </div>
       <div
+        className="mt-3 mb-5"
         style={{
           borderBottom: '1px solid black',
         }}
@@ -175,6 +181,7 @@ export default function Content() {
         </div>
       </div>
       <div
+        className="mt-3"
         style={{
           borderBottom: '1px solid black',
         }}
@@ -196,6 +203,7 @@ export default function Content() {
         </div>
       </div>
       <div
+        className="mt-3"
         style={{
           borderBottom: '1px solid black',
         }}
@@ -213,6 +221,7 @@ export default function Content() {
         </div>
       </div>
       <div
+        className="mt-3"
         style={{
           borderBottom: '1px solid black',
         }}
@@ -231,6 +240,7 @@ export default function Content() {
         </div>
       </div>
       <div
+        className="mt-3"
         style={{
           borderBottom: '1px solid black',
         }}
@@ -247,6 +257,7 @@ export default function Content() {
         </div>
       </div>
       <div
+        className="mt-3"
         style={{
           borderBottom: '1px solid black',
         }}
