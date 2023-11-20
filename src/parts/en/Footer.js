@@ -17,19 +17,31 @@ export default function Footer() {
         <div className="col-sm-12 col-lg-5">
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-5">
-              <a href="https://www.linkedin.com/in/yohanesvelly/">
+              <a
+                href="https://www.linkedin.com/in/yohanesvelly/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className="row align-items-center ml-0 mb-2">
                   <img src={ICLinkedin} alt="LinkedIn Logo" className="mr-3" />
                   <h5 style={{ margin: '0px' }}>LinkedIn</h5>
                 </div>
               </a>
-              <a href="https://github.com/johnvees">
+              <a
+                href="https://github.com/johnvees"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className="row align-items-center ml-0 mb-2">
                   <img src={ICGithub} alt="Github Logo" className="mr-3" />
                   <h5 style={{ margin: '0px' }}>Github</h5>
                 </div>
               </a>
-              <a href="https://www.instagram.com/yohanesvelly/">
+              <a
+                href="https://www.instagram.com/yohanesvelly/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className="row align-items-center ml-0 mb-2">
                   <img
                     src={ICInstagram}
@@ -53,7 +65,11 @@ export default function Footer() {
                   <h5 style={{ margin: '0px' }}>+62895325754494</h5>
                 </div>
               </a>
-              <a href="https://wa.me/+62895325754494?text=I%20interested%20with%20your%20portfolio,%20can%20i%20catch%20up%20with%20you?">
+              <a
+                href="https://wa.me/+62895325754494?text=I%20interested%20with%20your%20portfolio,%20can%20i%20catch%20up%20with%20you?"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className="row align-items-center ml-0 mb-2">
                   <img src={ICWhatsapp} alt="Logo Whatsapp" className="mr-3" />
                   <h5 style={{ margin: '0px' }}>Whatsapp</h5>

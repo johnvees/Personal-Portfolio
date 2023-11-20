@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ILHeroPict from '../../../assets/images/heroPictLanding.webp';
+import ILHeroPict from '../../../assets/images/heroPict.webp';
 
 export default function Hero() {
   const handleScroll = () => {
