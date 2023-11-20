@@ -22,7 +22,7 @@ export default function Hero() {
             software development industry.
           </h5>
           <div className="row">
-            <div className="col-6">
+            <div className="col-sm-12 col-md-6 col-lg-6 mb-2">
               <a
                 href="mailto:yohanesvelly23@gmail.com"
                 target="_blank"
@@ -33,7 +33,7 @@ export default function Hero() {
                 </button>
               </a>
             </div>
-            <div className="col-6">
+            <div className="col-sm-12 col-md-6 col-lg-6 mb-2">
               <a
                 href="https://wa.me/+62895325754494?text=I%20interested%20with%20your%20portfolio,%20can%20i%20catch%20up%20with%20you?"
                 target="_blank"
