@@ -397,6 +397,22 @@ section {
       }
     }
   }
+
+  &.container-project {
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: $light;
+    margin-top: 64px;
+
+    &.web {
+      h2 {
+        font-family: 'Gilroy-Bold';
+        font-size: 42px;
+        color: $black;
+      }
+
+    }
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -411,6 +427,15 @@ section {
     }
 
     &.container-about {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+
+      h1 {
+        font-size: 42px !important;
+      }
+    }
+
+    &.container-project {
       padding-left: 16px !important;
       padding-right: 16px !important;
 
