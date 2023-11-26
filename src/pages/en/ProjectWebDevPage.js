@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import Header from '../../parts/en/Header';
 import Footer from '../../parts/en/Footer';
-import ilWebProject1 from '../../../src/assets/images/ilWebProject1.webp';
-import ilWebProject2 from '../../../src/assets/images/ilWebProject2.webp';
-import ilWebProject3 from '../../../src/assets/images/ilWebProject3.webp';
-import icGithub from '../../../src/assets/images/iconGithub.svg';
-import icArrowGoUp from '../../../src/assets/images/iconArrowGoUp.svg';
+import ilWebProject1 from '../../assets/images/ilWebProject1.webp';
+import ilWebProject2 from '../../assets/images/ilWebProject2.webp';
+import ilWebProject3 from '../../assets/images/ilWebProject3.webp';
+import icGithub from '../../assets/images/iconGithub.svg';
+import icArrowGoUp from '../../assets/images/iconArrowGoUp.svg';
+import icReact from '../../assets/images/icReact.svg';
+import icRedux from '../../assets/images/icRedux.svg';
+import icSass from '../../assets/images/icSass.svg';
 
 export default function ProjectWebDevPage() {
   const projectList = [
@@ -13,7 +16,7 @@ export default function ProjectWebDevPage() {
       id: 1,
       projectTitle: 'Indonesia News Curator',
       projectDesc:
-        'This project is for my thesis project about curate Indonesian News using Latent Semantic Analysis',
+        'This project utilizes Latent Semantic Analysis to measure news similarity, filter relevant news, and prevent errors in news searches with related keywords and topics.',
       projectCategory: 'Web Development',
       projectBanner: ilWebProject1,
       projectLink: 'https://ta-berita.vercel.app/',
@@ -23,91 +26,75 @@ export default function ProjectWebDevPage() {
       techStack: [
         {
           id: 1,
-          name: 'MongoDB',
-          image: icGithub,
+          name: 'React',
+          image: icReact,
         },
         {
-          id: 1,
-          name: 'MongoDB',
-          image: icGithub,
+          id: 2,
+          name: 'Redux',
+          image: icRedux,
         },
         {
-          id: 1,
-          name: 'MongoDB',
-          image: icGithub,
-        },
-        {
-          id: 1,
-          name: 'MongoDB',
-          image: icGithub,
+          id: 3,
+          name: 'Sass',
+          image: icSass,
         },
       ],
     },
     {
       id: 2,
-      projectTitle: 'Indonesia News Curator',
-      projectDesc:
-        'This project is for my thesis project about curate Indonesian News using Latent Semantic Analysis',
+      projectTitle: 'PT. Weba International Company Profile',
+      projectDesc: `This website is designed for the needs of PT. Weba International, encompassing a company profile and product catalog. With a responsive design, intuitive interface, and visually appealing integration, it strengthens the company's online presence.`,
       projectCategory: 'Web Development',
       projectBanner: ilWebProject2,
-      projectLink: 'https://ta-berita.vercel.app/',
-      githubLink: 'https://github.com/johnvees/TA-Berita',
-      startDate: '2022-05-14',
-      endDate: '2022-07-09',
+      projectLink: '',
+      githubLink: 'https://github.com/johnvees/WEBA-CompanyProfile',
+      startDate: '2022-05-15',
+      endDate: '2022-07-08',
       techStack: [
         {
           id: 1,
-          name: 'MongoDB',
-          image: icGithub,
+          name: 'React',
+          image: icReact,
         },
         {
-          id: 1,
-          name: 'MongoDB',
-          image: icGithub,
+          id: 2,
+          name: 'Redux',
+          image: icRedux,
         },
         {
-          id: 1,
-          name: 'MongoDB',
-          image: icGithub,
-        },
-        {
-          id: 1,
-          name: 'MongoDB',
-          image: icGithub,
+          id: 3,
+          name: 'Sass',
+          image: icSass,
         },
       ],
     },
     {
       id: 3,
-      projectTitle: 'Indonesia News Curator2',
+      projectTitle: 'Staycation',
       projectDesc:
-        'This project is for my thesis project about curate Indonesian News using Latent Semantic Analysis',
+        'This project is from my online course, this website is for book hotel, villa and others for everyone and for fulfil their happiness weekend easily',
       projectCategory: 'Web Development',
       projectBanner: ilWebProject3,
-      projectLink: 'https://ta-berita.vercel.app/',
-      githubLink: 'https://github.com/johnvees/TA-Berita',
-      startDate: '2022-05-14',
-      endDate: '2022-07-09',
+      projectLink: '',
+      githubLink: 'https://github.com/johnvees/Staycation-MERN',
+      startDate: '2022-02-20',
+      endDate: '2022-05-27',
       techStack: [
         {
           id: 1,
-          name: 'MongoDB',
-          image: icGithub,
+          name: 'React',
+          image: icReact,
         },
         {
-          id: 1,
-          name: 'MongoDB',
-          image: icGithub,
+          id: 2,
+          name: 'Redux',
+          image: icRedux,
         },
         {
-          id: 1,
-          name: 'MongoDB',
-          image: icGithub,
-        },
-        {
-          id: 1,
-          name: 'MongoDB',
-          image: icGithub,
+          id: 3,
+          name: 'Sass',
+          image: icSass,
         },
       ],
     },
