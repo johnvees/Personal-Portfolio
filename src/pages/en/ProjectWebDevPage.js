@@ -191,20 +191,34 @@ export default function ProjectWebDevPage() {
                         </a>
                       </div>
                       <div className="col-sm-12 col-md-12 col-lg-4 mb-2">
-                        <a
-                          href={project.projectLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                        {/* Conditionally render the button based on project.projectLink length */}
+                        {project.projectLink.length > 0 ? (
+                          <a
+                            href={project.projectLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <button
+                              type="button"
+                              className="btn btn-warning"
+                              style={{ width: '100%' }}
+                            >
+                              View Project{' '}
+                              <img src={icArrowGoUp} alt="Arrow Go Up Icon" />
+                            </button>
+                          </a>
+                        ) : (
+                          // If project.projectLink length is 0, render a disabled button
                           <button
                             type="button"
                             className="btn btn-warning"
                             style={{ width: '100%' }}
+                            disabled
                           >
                             View Project{' '}
                             <img src={icArrowGoUp} alt="Arrow Go Up Icon" />
                           </button>
-                        </a>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -230,6 +244,36 @@ export default function ProjectWebDevPage() {
                     <div className="row">
                       <div className="col-4"></div>
                       <div className="col-sm-12 col-md-12 col-lg-4 mb-2">
+                        {/* Conditionally render the button based on project.projectLink length */}
+                        {project.projectLink.length > 0 ? (
+                          <a
+                            href={project.projectLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <button
+                              type="button"
+                              className="btn btn-warning"
+                              style={{ width: '100%' }}
+                            >
+                              View Project{' '}
+                              <img src={icArrowGoUp} alt="Arrow Go Up Icon" />
+                            </button>
+                          </a>
+                        ) : (
+                          // If project.projectLink length is 0, render a disabled button
+                          <button
+                            type="button"
+                            className="btn btn-warning"
+                            style={{ width: '100%' }}
+                            disabled
+                          >
+                            View Project{' '}
+                            <img src={icArrowGoUp} alt="Arrow Go Up Icon" />
+                          </button>
+                        )}
+                      </div>
+                      <div className="col-sm-12 col-md-12 col-lg-4 mb-2">
                         <a
                           href={project.githubLink}
                           target="_blank"
@@ -242,22 +286,6 @@ export default function ProjectWebDevPage() {
                           >
                             View in Github{' '}
                             <img src={icGithub} alt="Github Icon" />
-                          </button>
-                        </a>
-                      </div>
-                      <div className="col-sm-12 col-md-12 col-lg-4 mb-2">
-                        <a
-                          href={project.projectLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <button
-                            type="button"
-                            className="btn btn-warning"
-                            style={{ width: '100%' }}
-                          >
-                            View Project{' '}
-                            <img src={icArrowGoUp} alt="Arrow Go Up Icon" />
                           </button>
                         </a>
                       </div>
