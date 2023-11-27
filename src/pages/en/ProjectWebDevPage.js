@@ -9,6 +9,8 @@ import icArrowGoUp from '../../assets/images/iconArrowGoUp.svg';
 import icReact from '../../assets/images/icReact.svg';
 import icRedux from '../../assets/images/icRedux.svg';
 import icSass from '../../assets/images/icSass.svg';
+import icPolygonLeft from '../../assets/images/icPolygonLeft.svg';
+import icPolygonRight from '../../assets/images/icPolygonRight.svg';
 
 export default function ProjectWebDevPage() {
   const projectList = [
@@ -111,6 +113,7 @@ export default function ProjectWebDevPage() {
 
   // Step 3: Find the latest year
   const latestYear = Math.max(...uniqueYears);
+  const earliestYear = Math.min(...uniqueYears);
 
   // Step 4: Set the initial clickedYear state to the latest year
   const [clickedYear, setClickedYear] = useState(latestYear);
@@ -121,6 +124,20 @@ export default function ProjectWebDevPage() {
     // Add your desired action here, e.g. navigate to a different page
   };
 
+  const handleYearBefore = () => {
+    if (clickedYear !== earliestYear) {
+      const yearBefore = clickedYear - 1;
+      setClickedYear(yearBefore);
+    }
+  };
+
+  const handleYearNext = () => {
+    if (clickedYear !== latestYear) {
+      const yearAfter = clickedYear + 1;
+      setClickedYear(yearAfter);
+    }
+  };
+
   return (
     <div>
       <Header></Header>
@@ -128,21 +145,40 @@ export default function ProjectWebDevPage() {
         <div className="text-center mb-4">
           <h2>Web Development</h2>
         </div>
-        <div className="row justify-content-center mb-5">
+        <div className="row justify-content-center align-items-center mb-5 m-0">
+          <div
+            className={`mr-auto ${
+              clickedYear === earliestYear ? 'disabled' : 'allowed'
+            }`}
+            onClick={() => handleYearBefore()}
+          >
+            <img src={icPolygonLeft} alt="Icon Before" />
+          </div>
           {sortedYears.map((year) => (
             <div
               key={year}
               onClick={() => handleYearClick(year)}
               style={{
                 cursor: 'pointer',
-                margin: '5px',
-                color: clickedYear === year ? 'yellow' : 'gray',
+                marginRight: '24px',
+                marginLeft: '24px',
+                color: clickedYear === year ? '#0740AD' : '#707071',
                 textDecoration: clickedYear === year ? 'underline' : 'none',
+                fontSize: '32px',
+                fontFamily: 'Gilroy-Bold',
               }}
             >
               {year}
             </div>
           ))}
+          <div
+            className={`ml-auto ${
+              clickedYear === latestYear ? 'disabled' : 'allowed'
+            }`}
+            onClick={() => handleYearNext()}
+          >
+            <img src={icPolygonRight} alt="Icon Next" />
+          </div>
         </div>
         {/* Display projects for the clicked year */}
         {projectList
