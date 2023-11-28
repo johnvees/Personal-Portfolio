@@ -141,7 +141,7 @@ export default function ProjectWebDevPage() {
   return (
     <div>
       <Header></Header>
-      <section className="container-project web pt-5 pb-5">
+      <section className="container-project pt-5 pb-5">
         <div className="text-center mb-4">
           <h2>Web Development Projects</h2>
         </div>

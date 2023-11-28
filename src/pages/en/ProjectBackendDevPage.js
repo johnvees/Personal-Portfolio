@@ -1,33 +1,29 @@
 import React, { useState } from 'react';
 import Header from '../../parts/en/Header';
 import Footer from '../../parts/en/Footer';
-import ilMobileProject1 from '../../assets/images/ilMobileProject1.webp';
-import ilMobileProject2 from '../../assets/images/ilMobileProject2.webp';
-import ilMobileProject3 from '../../assets/images/ilMobileProject3.webp';
+import ilBackendProject1 from '../../assets/images/ilBackendProject1.webp';
+import ilBackendProject2 from '../../assets/images/ilBackendProject2.webp';
 import icGithub from '../../assets/images/iconGithub.svg';
 import icArrowGoUp from '../../assets/images/iconArrowGoUp.svg';
-import icPolygonLeft from '../../assets/images/icPolygonLeft.svg';
-import icPolygonRight from '../../assets/images/icPolygonRight.svg';
 import icReact from '../../assets/images/icReact.svg';
 import icRedux from '../../assets/images/icRedux.svg';
-import icFirebase from '../../assets/images/icFirebase.svg';
-import icJava from '../../assets/images/icJava.svg';
-import icSQLite from '../../assets/images/icSQLite.svg';
-import icAndroid from '../../assets/images/icAndroid.svg';
+import icSass from '../../assets/images/icSass.svg';
+import icPolygonLeft from '../../assets/images/icPolygonLeft.svg';
+import icPolygonRight from '../../assets/images/icPolygonRight.svg';
 
-export default function ProjectMobileDevPage() {
+export default function ProjectWebDevPage() {
   const projectList = [
     {
-      id: 4,
-      projectTitle: 'Second Hand App',
+      id: 7,
+      projectTitle: 'Indonesia News Curator - ADMIN',
       projectDesc:
-        'This application serves as an online marketplace, particularly for second-hand goods. The platform offers various categories of needs, allowing users who register on the app to act as both sellers and buyers using a single account. The platform facilitates the connection between sellers and buyers, enabling them to negotiate items and conduct transactions directly outside the platform.',
-      projectCategory: 'Mobile Development',
-      projectBanner: ilMobileProject1,
+        'This plaform is designed for the needs of Indonesia News Curator Backend/Admin Interface.',
+      projectCategory: 'Web Development',
+      projectBanner: ilBackendProject1,
       projectLink: '',
-      githubLink: 'https://github.com/johnvees/FinalProject-SecondHand',
-      startDate: '2022-06-12',
-      endDate: '2022-07-26',
+      githubLink: 'https://github.com/johnvees/TA-Berita-Server',
+      startDate: '2023-06-18',
+      endDate: '2023-07-06',
       techStack: [
         {
           id: 1,
@@ -40,51 +36,22 @@ export default function ProjectMobileDevPage() {
           image: icRedux,
         },
         {
-          id: 4,
-          name: 'Firebase',
-          image: icFirebase,
+          id: 3,
+          name: 'Sass',
+          image: icSass,
         },
       ],
     },
     {
-      id: 5,
-      projectTitle: 'Money Saving',
-      projectDesc:
-        'Money Saving is a financial management application designed to simplify the recording of daily financial transactions. By maintaining a digital daily financial record, users can efficiently manage and monitor their daily financial expenditures and income. All entries will be recorded accurately, providing a comprehensive overview, including total amounts and percentage comparisons.',
-      projectCategory: 'Mobile Development',
-      projectBanner: ilMobileProject2,
+      id: 8,
+      projectTitle: 'PT. Weba International Company Profile - ADMIN',
+      projectDesc: `This plaform is designed for the needs of PT. Weba International, encompassing a company profile and product catalog Backend/Admin Interface.`,
+      projectCategory: 'Web Development',
+      projectBanner: ilBackendProject2,
       projectLink: '',
-      githubLink: 'https://github.com/johnvees/MoneySaving',
-      startDate: '2022-07-22',
-      endDate: '2021-07-04',
-      techStack: [
-        {
-          id: 5,
-          name: 'Java',
-          image: icJava,
-        },
-        {
-          id: 6,
-          name: 'SQLite',
-          image: icSQLite,
-        },
-        {
-          id: 7,
-          name: 'Android',
-          image: icAndroid,
-        },
-      ],
-    },
-    {
-      id: 6,
-      projectTitle: 'My Doctor',
-      projectDesc: `This application is an Online Doctor Consultation app. Due to the numerous health concerns within the community and in an effort to minimize time and costs, many individuals opt for the instant option of consulting directly with certified doctors through online means.`,
-      projectCategory: 'Mobile Development',
-      projectBanner: ilMobileProject3,
-      projectLink: '',
-      githubLink: 'https://github.com/johnvees/HiDoc',
-      startDate: '2021-03-22',
-      endDate: '2021-12-24',
+      githubLink: 'https://github.com/johnvees/WEBA-Admin',
+      startDate: '2022-06-19',
+      endDate: '2022-06-28',
       techStack: [
         {
           id: 1,
@@ -97,9 +64,9 @@ export default function ProjectMobileDevPage() {
           image: icRedux,
         },
         {
-          id: 4,
-          name: 'Firebase',
-          image: icFirebase,
+          id: 3,
+          name: 'Sass',
+          image: icSass,
         },
       ],
     },
@@ -146,7 +113,7 @@ export default function ProjectMobileDevPage() {
       <Header></Header>
       <section className="container-project pt-5 pb-5">
         <div className="text-center mb-4">
-          <h2>Mobile Development Projects</h2>
+          <h2>Backend Development Projects</h2>
         </div>
         <div className="row justify-content-center align-items-center mb-5 m-0">
           <div
