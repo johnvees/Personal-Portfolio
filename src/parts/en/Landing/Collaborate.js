@@ -1,10 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ILBlobTop from '../../../assets/images/ilCollaborateTop.webp';
 import ILBlobBottom from '../../../assets/images/ilCollaborateBottom.webp';
 
 export default function Collaborate() {
+  useEffect(() => {
+    // Get the query parameter from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const scrollTo = urlParams.get('scrollTo');
+
+    // Scroll to the target element if scrollTo is present
+    if (scrollTo) {
+      const targetElement = document.getElementById(scrollTo);
+
+      if (targetElement) {
+        const offset = targetElement.offsetTop;
+
+        window.scrollTo({
+          top: offset,
+          behavior: 'smooth', // Optional: Add smooth scrolling
+        });
+      }
+    }
+  }, []);
+
   return (
-    <section className="container-landing collaborate">
+    <section className="container-landing collaborate" id="contact-section">
       <img
         src={ILBlobTop}
         alt="Blob Illustration Collaborate"
@@ -18,7 +38,7 @@ export default function Collaborate() {
           height: '55%',
         }}
       >
-        <div className='text-center'>
+        <div className="text-center">
           <h1>
             Transform Your Ideas into Digital Magic Lets Collaborate for
             Success!

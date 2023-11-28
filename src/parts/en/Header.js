@@ -87,7 +87,7 @@ export default function Header() {
                 </div>
               </li>
               <li className={`nav-item${getNavLinkClass('/en/contact')}`}>
-                <a className="nav-link" href="/en/contact">
+                <a className="nav-link" href="/en?scrollTo=contact-section">
                   Contact
                 </a>
               </li>
