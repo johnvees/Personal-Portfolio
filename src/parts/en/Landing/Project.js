@@ -4,11 +4,7 @@ import ILCarouselMobile from '../../../assets/images/carouselMobile.webp';
 import ILCarouselBackend from '../../../assets/images/carouselBackend.webp';
 
 export default function Project() {
-  const carouselImages = [
-    ILCarouselWeb,
-    ILCarouselMobile,
-    ILCarouselBackend,
-  ];
+  const carouselImages = [ILCarouselWeb, ILCarouselMobile, ILCarouselBackend];
 
   return (
     <section className="container-landing project pt-5 pb-5">
@@ -20,13 +16,15 @@ export default function Project() {
         <div className=" d-flex ml-auto">
           <div className="col">
             <h5>Check out more projects I have worked on</h5>
-            <button
-              type="button"
-              class="btn btn-primary"
-              style={{ width: '100%' }}
-            >
-              Show More
-            </button>
+            <a href="/en/web-dev">
+              <button
+                type="button"
+                class="btn btn-primary"
+                style={{ width: '100%' }}
+              >
+                Show More
+              </button>
+            </a>
           </div>
         </div>
       </div>
