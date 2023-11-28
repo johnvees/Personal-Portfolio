@@ -143,7 +143,7 @@ export default function ProjectWebDevPage() {
       <Header></Header>
       <section className="container-project web pt-5 pb-5">
         <div className="text-center mb-4">
-          <h2>Web Development</h2>
+          <h2>Web Development Projects</h2>
         </div>
         <div className="row justify-content-center align-items-center mb-5 m-0">
           <div
@@ -198,7 +198,7 @@ export default function ProjectWebDevPage() {
                     />
                   </div>
                   <div className="col-sm-12 col-md-12 col-lg-6">
-                    <div className="row m-0 mb-2">
+                    <div className="row m-0 mb-2 align-items-center">
                       <h4>{project.projectTitle}</h4>
                       {project.techStack.map((techItem) => (
                         <img
@@ -264,7 +264,7 @@ export default function ProjectWebDevPage() {
                 <div className="row mb-4 justify-content-end">
                   <div className="col-3"></div>
                   <div className="col-sm-12 col-md-12 col-lg-6">
-                    <div className="row m-0 justify-content-end mb-2">
+                    <div className="row m-0 justify-content-end align-items-center mb-2">
                       {project.techStack.map((techItem) => (
                         <img
                           key={techItem.id}
