@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import ILCarouselWeb from '../../../assets/images/carouselWeb.webp';
 import ILCarouselMobile from '../../../assets/images/carouselMobile.webp';
 import ILCarouselBackend from '../../../assets/images/carouselBackend.webp';
+import icPrevCarousel from '../../../assets/images/icPrevCarousel.svg';
+import icNextCarousel from '../../../assets/images/icNextCarousel.svg';
 
 export default function Project() {
   const carouselImages = [ILCarouselWeb, ILCarouselMobile, ILCarouselBackend];
@@ -50,6 +52,7 @@ export default function Project() {
             <div
               key={index}
               className={`carousel-item ${index === 0 ? 'active' : ''}`}
+              data-interval="2000"
             >
               <img
                 src={image}
@@ -65,10 +68,7 @@ export default function Project() {
           data-target="#carouselExampleFade"
           data-slide="prev"
         >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
+          <img src={icPrevCarousel} alt="" />
           <span className="sr-only">Previous</span>
         </button>
         <button
@@ -77,10 +77,7 @@ export default function Project() {
           data-target="#carouselExampleFade"
           data-slide="next"
         >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
+          <img src={icNextCarousel} alt="" />
           <span className="sr-only">Next</span>
         </button>
       </div>
