@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ILHeroPict from '../../../assets/images/heroPict.webp';
 
 export default function Hero() {

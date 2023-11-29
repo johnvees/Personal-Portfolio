@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ILCarouselWeb from '../../../assets/images/carouselWeb.webp';
 import ILCarouselMobile from '../../../assets/images/carouselMobile.webp';
 import ILCarouselBackend from '../../../assets/images/carouselBackend.webp';
@@ -21,7 +21,7 @@ export default function Project() {
             <a href="/en/web-dev">
               <button
                 type="button"
-                class="btn btn-primary"
+                className="btn btn-primary"
                 style={{ width: '100%' }}
               >
                 Show More
