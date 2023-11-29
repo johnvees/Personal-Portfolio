@@ -43,14 +43,132 @@
 @import 'utilities';
 @import 'print';
 
+@font-face {
+  font-family: 'SFPD-Regular';
+  src: local('San Francisco Pro Display'),
+    url(../../fonts/sfprodisplay_regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SFPD-Medium';
+  src: local('San Francisco Pro Display'),
+    url(../../fonts/sfprodisplay_medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SFPD-SemiBold';
+  src: local('San Francisco Pro Display'),
+    url(../../fonts/sfprodisplay_semibold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SFPD-Bold';
+  src: local('San Francisco Pro Display'),
+    url(../../fonts/sfprodisplay_bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-SemiBold';
+  src: local('Gilroy'), url(../../fonts/gilroy_semibold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: local('Gilroy'), url(../../fonts/gilroy_bold.otf) format('opentype');
+}
+
+button {
+  &.btn {
+    &.btn-warning {
+      font-family: 'Gilroy-Bold';
+      color: $black;
+      background-color: $brightyellow;
+    }
+
+    &.btn-danger {
+      font-family: 'Gilroy-Bold';
+      color: $white;
+      background-color: $orange;
+    }
+
+    &.btn-primary {
+      font-family: 'Gilroy-Bold';
+      color: $white;
+      background-color: $indigo;
+    }
+  }
+}
+
 header {
   width: 100%;
   z-index: 1000;
   background-color: $light;
+  font-family: 'SFPD-Regular';
+  font-size: 20px;
+
   .container-fluid {
-    padding-left: 60px;
-    padding-right: 60px;
-    background-color: $light;
+    padding: 0px;
+
+    .container-logo {
+      padding-left: 16px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      height: 64px;
+      background-size: cover;
+
+      img {
+        width: 120px;
+        height: 100%;
+      }
+    }
+
+    ul.navbar-nav {
+      padding-left: 16px;
+      li.nav-item {
+        &.active {
+          a.nav-link {
+            font-family: 'SFPD-SemiBold';
+            color: $black;
+          }
+        }
+        a {
+          &.nav-link {
+            color: $secondary;
+            &:hover {
+              color: $black;
+            }
+          }
+        }
+        a.dropdown-item {
+          color: $black;
+          &.active {
+            color: $white;
+            background-color: $indigo;
+          }
+        }
+      }
+    }
+
+    .container-language {
+      background-color: $yellow;
+      height: 64px;
+      width: 180px;
+
+      a {
+        text-decoration: none;
+        div.button {
+          height: 100%;
+          h5 {
+            color: $indigo;
+            font-family: 'SFPD-SemiBold';
+            width: fit-content;
+          }
+          img {
+            width: 40%;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -61,60 +179,323 @@ section {
     background-color: $light;
 
     &.hero {
-      height: 90vh;
+      // height: 100vh;
       max-height: 1000vh;
       background-color: $indigo;
-    }
+      margin-top: 64px;
 
-    &.collaborate {
-      height: 50vh;
+      h1 {
+        font-family: 'Gilroy-Bold';
+        font-size: 58px;
+        color: $white;
+      }
+
+      h4 {
+        font-family: 'SFPD-Regular';
+        font-size: 24px;
+        color: $white;
+      }
     }
 
     &.about {
       background-color: $light;
+
+      h4 {
+        font-family: 'SFPD-Bold';
+        font-size: 24px;
+        color: $indigo;
+      }
+
+      h2 {
+        font-family: 'Gilroy-Bold';
+        font-size: 42px;
+        color: $black;
+      }
+
+      h5 {
+        font-family: 'SFPD-Regular';
+        font-size: 20px;
+        color: $dark;
+      }
+
+      h6 {
+        font-family: 'SFPD-Regular';
+        font-size: 18px;
+        color: $dark;
+
+        &.title {
+          font-family: 'Gilroy-Semibold';
+          color: $black;
+        }
+
+        &.info {
+          font-size: 12px;
+        }
+      }
+
+      .container-project {
+        background-color: #ffd2b5;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        padding: 16px;
+      }
+
+      .container-experience {
+        background-color: #fff1b9;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        padding: 16px;
+      }
+    }
+
+    &.service {
+      h4 {
+        font-family: 'SFPD-Bold';
+        font-size: 24px;
+        color: $indigo;
+      }
+
+      h2 {
+        font-family: 'Gilroy-Bold';
+        font-size: 42px;
+        color: $black;
+      }
+
+      h5 {
+        font-family: 'SFPD-Regular';
+        font-size: 20px;
+        color: $dark;
+      }
+
+      h3 {
+        font-family: 'Gilroy-Semibold';
+        font-size: 32px;
+        color: $black;
+      }
+
+      .container-service {
+        background-color: #e7e7e7;
+        border-radius: 10px;
+        height: 460px;
+      }
+    }
+
+    &.collaborate {
+      height: 50vh;
+
+      h1 {
+        font-family: 'Gilroy-Bold';
+        font-size: 58px;
+        color: $black;
+      }
     }
 
     &.project {
       background-color: $light;
+
+      h4 {
+        font-family: 'SFPD-Bold';
+        font-size: 24px;
+        color: $indigo;
+      }
+
+      h2 {
+        font-family: 'Gilroy-Bold';
+        font-size: 42px;
+        color: $black;
+      }
+
+      h5 {
+        font-family: 'SFPD-Regular';
+        font-size: 20px;
+        color: $dark;
+      }
     }
 
     &.footer {
-      height: 22vh;
+      // height: 22vh;
       background-color: $indigo;
-    }
+      max-height: 100vh;
 
-    .photo {
-      position: absolute; /* Position the photo absolutely */
-      // box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow effect */
-      z-index: 2; /* Place the photo in front of blobs (higher value than blobs' z-index) */
-    }
-
-    .blob {
-      position: absolute;
-      transform: translate(-20%, 50%);
-      transition: transform 0.3s ease; /* Add a smooth transition effect for movement */
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow effect */
-      z-index: 1;
-
-      &.blob-1 {
-        width: 150px;
-        height: 150px;
-        top: 20%;
-        left: 20%;
+      a {
+        text-decoration: none;
       }
 
-      &.blob-2 {
-        width: 120px;
-        height: 120px;
-        top: 70%;
-        left: 50%;
+      h2 {
+        font-size: 42px;
+        color: $white;
+        font-family: 'Gilroy-Bold';
       }
 
-      &.blob-3 {
-        width: 100px;
-        height: 100px;
-        top: 40%;
-        left: 80%;
+      h5 {
+        font-size: 20px;
+        color: $white;
+        font-family: 'SFPD-Semibold';
+      }
+
+      p {
+        font-size: 16px;
+        color: $white;
+        font-family: 'SFPD-Regular';
+      }
+    }
+  }
+
+  &.container-about {
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: $light;
+
+    &.hero {
+      max-height: 1000vh;
+      background-color: $indigo;
+      margin-top: 64px;
+
+      h1 {
+        font-family: 'Gilroy-Bold';
+        font-size: 58px;
+        color: $white;
+      }
+
+      h5 {
+        font-family: 'SFPD-Regular';
+        font-size: 20px;
+        color: $white;
+      }
+    }
+
+    &.content {
+      h2 {
+        font-family: 'Gilroy-Bold';
+        font-size: 42px;
+        color: $black;
+      }
+
+      h3 {
+        font-family: 'Gilroy-Bold';
+        font-size: 32px;
+        color: $black;
+      }
+      h4 {
+        font-family: 'SFPD-Medium';
+        font-size: 24px;
+        color: $dark;
+      }
+
+      h5 {
+        font-family: 'SFPD-Regular';
+        font-size: 20px;
+        color: $secondary;
+      }
+
+      li {
+        font-family: 'SFPD-Regular';
+        font-size: 16px;
+        color: $secondary;
+      }
+    }
+  }
+
+  &.container-project {
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: $light;
+    margin-top: 64px;
+
+    h2 {
+      font-family: 'Gilroy-Bold';
+      font-size: 42px;
+      color: $black;
+    }
+
+    h4 {
+      font-family: 'Gilroy-Bold';
+      font-size: 24px;
+      color: $black;
+    }
+
+    h5 {
+      font-family: 'SFPD-Regular';
+      font-size: 20px;
+      color: $dark;
+    }
+
+    .disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .allowed {
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  section {
+    &.container-landing {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+
+      h1 {
+        font-size: 42px !important;
+      }
+    }
+
+    &.container-about {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+
+      h1 {
+        font-size: 42px !important;
+      }
+    }
+
+    &.container-project {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+
+      h1 {
+        font-size: 42px !important;
+      }
+
+      .row.mb-4.justify-content-end {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .row.mb-4.justify-content-end .col-lg-3 {
+        order: -1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    &.container-project {
+      .row.mb-4.justify-content-end {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .row.mb-4.justify-content-end .col-lg-3 {
+        order: -1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  section {
+    &.container-landing {
+      padding-left: 32px;
+      padding-right: 32px;
+
+      h1 {
+        font-size: 46px;
       }
     }
   }

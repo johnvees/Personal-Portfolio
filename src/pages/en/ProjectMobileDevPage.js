@@ -2,30 +2,33 @@ import React, { useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Header from '../../parts/en/Header';
 import Footer from '../../parts/en/Footer';
-import ilWebProject1 from '../../assets/images/ilWebProject1.webp';
-import ilWebProject2 from '../../assets/images/ilWebProject2.webp';
-import ilWebProject3 from '../../assets/images/ilWebProject3.webp';
+import ilMobileProject1 from '../../assets/images/ilMobileProject1.webp';
+import ilMobileProject2 from '../../assets/images/ilMobileProject2.webp';
+import ilMobileProject3 from '../../assets/images/ilMobileProject3.webp';
 import icGithub from '../../assets/images/iconGithub.svg';
 import icArrowGoUp from '../../assets/images/iconArrowGoUp.svg';
-import icReact from '../../assets/images/icReact.svg';
-import icRedux from '../../assets/images/icRedux.svg';
-import icSass from '../../assets/images/icSass.svg';
 import icPolygonLeft from '../../assets/images/icPolygonLeft.svg';
 import icPolygonRight from '../../assets/images/icPolygonRight.svg';
+import icReact from '../../assets/images/icReact.svg';
+import icRedux from '../../assets/images/icRedux.svg';
+import icFirebase from '../../assets/images/icFirebase.svg';
+import icJava from '../../assets/images/icJava.svg';
+import icSQLite from '../../assets/images/icSQLite.svg';
+import icAndroid from '../../assets/images/icAndroid.svg';
 
-export default function ProjectWebDevPage() {
+export default function ProjectMobileDevPage() {
   const projectList = [
     {
-      id: 1,
-      projectTitle: 'Indonesia News Curator',
+      id: 4,
+      projectTitle: 'Second Hand App',
       projectDesc:
-        'This project utilizes Latent Semantic Analysis to measure news similarity, filter relevant news, and prevent errors in news searches with related keywords and topics.',
-      projectCategory: 'Web Development',
-      projectBanner: ilWebProject1,
-      projectLink: 'https://ta-berita.vercel.app/',
-      githubLink: 'https://github.com/johnvees/TA-Berita',
-      startDate: '2023-05-14',
-      endDate: '2023-07-09',
+        'This application serves as an online marketplace, particularly for second-hand goods. The platform offers various categories of needs, allowing users who register on the app to act as both sellers and buyers using a single account. The platform facilitates the connection between sellers and buyers, enabling them to negotiate items and conduct transactions directly outside the platform.',
+      projectCategory: 'Mobile Development',
+      projectBanner: ilMobileProject1,
+      projectLink: '',
+      githubLink: 'https://github.com/johnvees/FinalProject-SecondHand',
+      startDate: '2022-06-12',
+      endDate: '2022-07-26',
       techStack: [
         {
           id: 1,
@@ -38,51 +41,51 @@ export default function ProjectWebDevPage() {
           image: icRedux,
         },
         {
-          id: 3,
-          name: 'Sass',
-          image: icSass,
+          id: 4,
+          name: 'Firebase',
+          image: icFirebase,
         },
       ],
     },
     {
-      id: 2,
-      projectTitle: 'PT. Weba International Company Profile',
-      projectDesc: `This website is designed for the needs of PT. Weba International, encompassing a company profile and product catalog. With a responsive design, intuitive interface, and visually appealing integration, it strengthens the company's online presence.`,
-      projectCategory: 'Web Development',
-      projectBanner: ilWebProject2,
+      id: 5,
+      projectTitle: 'Money Saving',
+      projectDesc:
+        'Money Saving is a financial management application designed to simplify the recording of daily financial transactions. By maintaining a digital daily financial record, users can efficiently manage and monitor their daily financial expenditures and income. All entries will be recorded accurately, providing a comprehensive overview, including total amounts and percentage comparisons.',
+      projectCategory: 'Mobile Development',
+      projectBanner: ilMobileProject2,
       projectLink: '',
-      githubLink: 'https://github.com/johnvees/WEBA-CompanyProfile',
-      startDate: '2022-05-15',
-      endDate: '2022-07-08',
+      githubLink: 'https://github.com/johnvees/MoneySaving',
+      startDate: '2022-07-22',
+      endDate: '2021-07-04',
       techStack: [
         {
-          id: 1,
-          name: 'React',
-          image: icReact,
+          id: 5,
+          name: 'Java',
+          image: icJava,
         },
         {
-          id: 2,
-          name: 'Redux',
-          image: icRedux,
+          id: 6,
+          name: 'SQLite',
+          image: icSQLite,
         },
         {
-          id: 3,
-          name: 'Sass',
-          image: icSass,
+          id: 7,
+          name: 'Android',
+          image: icAndroid,
         },
       ],
     },
     {
-      id: 3,
-      projectTitle: 'Staycation',
-      projectDesc:
-        'This project is from my online course, this website is for book hotel, villa and others for everyone and for fulfil their happiness weekend easily',
-      projectCategory: 'Web Development',
-      projectBanner: ilWebProject3,
+      id: 6,
+      projectTitle: 'My Doctor',
+      projectDesc: `This application is an Online Doctor Consultation app. Due to the numerous health concerns within the community and in an effort to minimize time and costs, many individuals opt for the instant option of consulting directly with certified doctors through online means.`,
+      projectCategory: 'Mobile Development',
+      projectBanner: ilMobileProject3,
       projectLink: '',
-      githubLink: 'https://github.com/johnvees/Staycation-MERN',
-      startDate: '2022-02-20',
-      endDate: '2022-05-27',
+      githubLink: 'https://github.com/johnvees/HiDoc',
+      startDate: '2021-03-22',
+      endDate: '2021-12-24',
       techStack: [
         {
           id: 1,
@@ -95,9 +98,9 @@ export default function ProjectWebDevPage() {
           image: icRedux,
         },
         {
-          id: 3,
-          name: 'Sass',
-          image: icSass,
+          id: 4,
+          name: 'Firebase',
+          image: icFirebase,
         },
       ],
     },
@@ -145,7 +148,7 @@ export default function ProjectWebDevPage() {
       <section className="container-project pt-5 pb-5">
         <Fade bottom cascade>
           <div className="text-center mb-4">
-            <h2>Web Development Projects</h2>
+            <h2>Mobile Development Projects</h2>
           </div>
         </Fade>
         <Fade bottom cascade>

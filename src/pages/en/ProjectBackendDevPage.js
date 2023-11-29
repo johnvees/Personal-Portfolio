@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Header from '../../parts/en/Header';
 import Footer from '../../parts/en/Footer';
-import ilWebProject1 from '../../assets/images/ilWebProject1.webp';
-import ilWebProject2 from '../../assets/images/ilWebProject2.webp';
-import ilWebProject3 from '../../assets/images/ilWebProject3.webp';
+import ilBackendProject1 from '../../assets/images/ilBackendProject1.webp';
+import ilBackendProject2 from '../../assets/images/ilBackendProject2.webp';
 import icGithub from '../../assets/images/iconGithub.svg';
 import icArrowGoUp from '../../assets/images/iconArrowGoUp.svg';
 import icReact from '../../assets/images/icReact.svg';
@@ -16,16 +15,16 @@ import icPolygonRight from '../../assets/images/icPolygonRight.svg';
 export default function ProjectWebDevPage() {
   const projectList = [
     {
-      id: 1,
-      projectTitle: 'Indonesia News Curator',
+      id: 7,
+      projectTitle: 'Indonesia News Curator - ADMIN',
       projectDesc:
-        'This project utilizes Latent Semantic Analysis to measure news similarity, filter relevant news, and prevent errors in news searches with related keywords and topics.',
+        'This plaform is designed for the needs of Indonesia News Curator Backend/Admin Interface.',
       projectCategory: 'Web Development',
-      projectBanner: ilWebProject1,
-      projectLink: 'https://ta-berita.vercel.app/',
-      githubLink: 'https://github.com/johnvees/TA-Berita',
-      startDate: '2023-05-14',
-      endDate: '2023-07-09',
+      projectBanner: ilBackendProject1,
+      projectLink: '',
+      githubLink: 'https://github.com/johnvees/TA-Berita-Server',
+      startDate: '2023-06-18',
+      endDate: '2023-07-06',
       techStack: [
         {
           id: 1,
@@ -45,44 +44,15 @@ export default function ProjectWebDevPage() {
       ],
     },
     {
-      id: 2,
-      projectTitle: 'PT. Weba International Company Profile',
-      projectDesc: `This website is designed for the needs of PT. Weba International, encompassing a company profile and product catalog. With a responsive design, intuitive interface, and visually appealing integration, it strengthens the company's online presence.`,
+      id: 8,
+      projectTitle: 'PT. Weba International Company Profile - ADMIN',
+      projectDesc: `This plaform is designed for the needs of PT. Weba International, encompassing a company profile and product catalog Backend/Admin Interface.`,
       projectCategory: 'Web Development',
-      projectBanner: ilWebProject2,
+      projectBanner: ilBackendProject2,
       projectLink: '',
-      githubLink: 'https://github.com/johnvees/WEBA-CompanyProfile',
-      startDate: '2022-05-15',
-      endDate: '2022-07-08',
-      techStack: [
-        {
-          id: 1,
-          name: 'React',
-          image: icReact,
-        },
-        {
-          id: 2,
-          name: 'Redux',
-          image: icRedux,
-        },
-        {
-          id: 3,
-          name: 'Sass',
-          image: icSass,
-        },
-      ],
-    },
-    {
-      id: 3,
-      projectTitle: 'Staycation',
-      projectDesc:
-        'This project is from my online course, this website is for book hotel, villa and others for everyone and for fulfil their happiness weekend easily',
-      projectCategory: 'Web Development',
-      projectBanner: ilWebProject3,
-      projectLink: '',
-      githubLink: 'https://github.com/johnvees/Staycation-MERN',
-      startDate: '2022-02-20',
-      endDate: '2022-05-27',
+      githubLink: 'https://github.com/johnvees/WEBA-Admin',
+      startDate: '2022-06-19',
+      endDate: '2022-06-28',
       techStack: [
         {
           id: 1,
@@ -145,7 +115,7 @@ export default function ProjectWebDevPage() {
       <section className="container-project pt-5 pb-5">
         <Fade bottom cascade>
           <div className="text-center mb-4">
-            <h2>Web Development Projects</h2>
+            <h2>Backend Development Projects</h2>
           </div>
         </Fade>
         <Fade bottom cascade>
