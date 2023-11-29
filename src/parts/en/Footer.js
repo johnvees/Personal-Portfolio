@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ICEmail from '../../assets/images/iconEmail.svg';
 import ICTelp from '../../assets/images/iconTelp.svg';
 import ICWhatsapp from '../../assets/images/iconWhatsapp.svg';
@@ -7,8 +7,28 @@ import ICLinkedin from '../../assets/images/iconLinkedin.svg';
 import ICInstagram from '../../assets/images/iconInstagram.svg';
 
 export default function Footer() {
+  useEffect(() => {
+    // Get the query parameter from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const scrollTo = urlParams.get('scrollTo');
+
+    // Scroll to the target element if scrollTo is present
+    if (scrollTo) {
+      const targetElement = document.getElementById(scrollTo);
+
+      if (targetElement) {
+        const offset = targetElement.offsetTop;
+
+        window.scrollTo({
+          top: offset,
+          behavior: 'smooth', // Optional: Add smooth scrolling
+        });
+      }
+    }
+  }, []);
+
   return (
-    <section className="container-landing footer ">
+    <section className="container-landing footer" id="contact-section">
       <div className="row pt-4">
         <div className="col-sm-12 col-lg-4 mb-3">
           <h2>Connect With Me and Create Together!</h2>
