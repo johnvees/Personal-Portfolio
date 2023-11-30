@@ -5,7 +5,7 @@ import Hero from '../../parts/id/Landing/Hero';
 import About from '../../parts/id/Landing/About';
 import Service from '../../parts/id/Landing/Service';
 import Project from '../../parts/id/Landing/Project';
-import Collaborate from '../../parts/en/Landing/Collaborate';
+import Collaborate from '../../parts/id/Landing/Collaborate';
 
 export default class LandingPage extends Component {
   render() {
