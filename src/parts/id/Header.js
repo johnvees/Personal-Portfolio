@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import LanguageHandler from '../../assets/images/changeLanguageButton.webp';
+import LanguageHandler from '../../assets/images/changeLanguageButtonID.webp';
 import LogoBlack from '../../assets/images/logoBlack.svg';
 
 export default function Header() {
@@ -39,12 +39,12 @@ export default function Header() {
             <ul className="navbar-nav ml-auto">
               <li className={`nav-item${getNavLinkClass('/en')}`}>
                 <a className="nav-link" href="/en">
-                  Home
+                  Beranda
                 </a>
               </li>
               <li className={`nav-item${getNavLinkClass('/en/about')}`}>
                 <a className="nav-link" href="/en/about">
-                  About
+                  Tentang
                 </a>
               </li>
               <li
@@ -59,7 +59,7 @@ export default function Header() {
                   data-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Projects
+                  Project
                 </a>
                 <div className="dropdown-menu">
                   <a
@@ -88,7 +88,7 @@ export default function Header() {
               </li>
               {/* <li className={`nav-item${getNavLinkClass('/en/contact')}`}>
                 <a className="nav-link" href="/en?scrollTo=contact-section">
-                  Contact
+                  Hubungi Saya
                 </a>
               </li> */}
             </ul>
