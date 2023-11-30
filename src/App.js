@@ -11,6 +11,7 @@ import AboutPageID from './pages/id/AboutPage';
 import ProjectWebDevEN from './pages/en/ProjectWebDevPage';
 import ProjectWebDevID from './pages/id/ProjectWebDevPage';
 import ProjectMobileEN from './pages/en/ProjectMobileDevPage';
+import ProjectMobileID from './pages/id/ProjectMobileDevPage';
 import ProjectBackendEN from './pages/en/ProjectBackendDevPage';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/en/web-dev" element={<ProjectWebDevEN />}></Route>
         <Route path="/id/web-dev" element={<ProjectWebDevID />}></Route>
         <Route path="/en/mobile-dev" element={<ProjectMobileEN />}></Route>
+        <Route path="/id/mobile-dev" element={<ProjectMobileID />}></Route>
         <Route path="/en/backend-dev" element={<ProjectBackendEN />}></Route>
       </Routes>
     </div>
