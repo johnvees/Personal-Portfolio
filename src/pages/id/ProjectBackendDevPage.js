@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Fade from 'react-reveal/Fade';
-import Header from '../../parts/en/Header';
-import Footer from '../../parts/en/Footer';
+import Header from '../../parts/id/Header';
+import Footer from '../../parts/id/Footer';
 import ilBackendProject1 from '../../assets/images/ilBackendProject1.webp';
 import ilBackendProject2 from '../../assets/images/ilBackendProject2.webp';
 import icGithub from '../../assets/images/iconGithub.svg';
@@ -18,7 +18,7 @@ export default function ProjectWebDevPage() {
       id: 7,
       projectTitle: 'Indonesia News Curator - ADMIN',
       projectDesc:
-        'This plaform is designed for the needs of Indonesia News Curator Backend/Admin Interface.',
+        'Platform ini dirancang untuk kebutuhan Antarmuka Backend/Admin Indonesia News Curator',
       projectCategory: 'Backend Development',
       projectBanner: ilBackendProject1,
       projectLink: '',
@@ -46,7 +46,7 @@ export default function ProjectWebDevPage() {
     {
       id: 8,
       projectTitle: 'PT. Weba International Company Profile - ADMIN',
-      projectDesc: `This plaform is designed for the needs of PT. Weba International, encompassing a company profile and product catalog Backend/Admin Interface.`,
+      projectDesc: `Platform ini dirancang untuk kebutuhan PT. Weba International, mencakup Antarmuka Backend/Admin Profil Perusahaan dan Katalog Produk`,
       projectCategory: 'Backend Development',
       projectBanner: ilBackendProject2,
       projectLink: '',
@@ -115,7 +115,7 @@ export default function ProjectWebDevPage() {
       <section className="container-project pt-5 pb-5">
         <Fade bottom cascade>
           <div className="text-center mb-4">
-            <h2>Backend Development Projects</h2>
+            <h2>Proyek Backend Development</h2>
           </div>
         </Fade>
         <Fade bottom cascade>
@@ -197,7 +197,7 @@ export default function ProjectWebDevPage() {
                               className="btn btn-primary"
                               style={{ width: '100%' }}
                             >
-                              View in Github{' '}
+                              Lihat di Github{' '}
                               <img src={icGithub} alt="Github Icon" />
                             </button>
                           </a>
@@ -215,7 +215,7 @@ export default function ProjectWebDevPage() {
                                 className="btn btn-warning"
                                 style={{ width: '100%' }}
                               >
-                                View Project{' '}
+                                Lihat Project{' '}
                                 <img src={icArrowGoUp} alt="Arrow Go Up Icon" />
                               </button>
                             </a>
@@ -227,7 +227,7 @@ export default function ProjectWebDevPage() {
                               style={{ width: '100%' }}
                               disabled
                             >
-                              View Project{' '}
+                              Lihat Project{' '}
                               <img src={icArrowGoUp} alt="Arrow Go Up Icon" />
                             </button>
                           )}
@@ -272,7 +272,7 @@ export default function ProjectWebDevPage() {
                                 className="btn btn-warning"
                                 style={{ width: '100%' }}
                               >
-                                View Project{' '}
+                                Lihat Project{' '}
                                 <img src={icArrowGoUp} alt="Arrow Go Up Icon" />
                               </button>
                             </a>
@@ -284,7 +284,7 @@ export default function ProjectWebDevPage() {
                               style={{ width: '100%' }}
                               disabled
                             >
-                              View Project{' '}
+                              Lihat Project{' '}
                               <img src={icArrowGoUp} alt="Arrow Go Up Icon" />
                             </button>
                           )}
@@ -300,7 +300,7 @@ export default function ProjectWebDevPage() {
                               className="btn btn-primary"
                               style={{ width: '100%' }}
                             >
-                              View in Github{' '}
+                              Lihat di Github{' '}
                               <img src={icGithub} alt="Github Icon" />
                             </button>
                           </a>

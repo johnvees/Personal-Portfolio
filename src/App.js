@@ -13,6 +13,7 @@ import ProjectWebDevID from './pages/id/ProjectWebDevPage';
 import ProjectMobileEN from './pages/en/ProjectMobileDevPage';
 import ProjectMobileID from './pages/id/ProjectMobileDevPage';
 import ProjectBackendEN from './pages/en/ProjectBackendDevPage';
+import ProjectBackendID from './pages/id/ProjectBackendDevPage';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/en/mobile-dev" element={<ProjectMobileEN />}></Route>
         <Route path="/id/mobile-dev" element={<ProjectMobileID />}></Route>
         <Route path="/en/backend-dev" element={<ProjectBackendEN />}></Route>
+        <Route path="/id/backend-dev" element={<ProjectBackendID />}></Route>
       </Routes>
     </div>
   );
