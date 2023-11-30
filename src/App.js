@@ -9,6 +9,7 @@ import LandingPageID from './pages/id/LandingPage';
 import AboutPageEN from './pages/en/AboutPage';
 import AboutPageID from './pages/id/AboutPage';
 import ProjectWebDevEN from './pages/en/ProjectWebDevPage';
+import ProjectWebDevID from './pages/id/ProjectWebDevPage';
 import ProjectMobileEN from './pages/en/ProjectMobileDevPage';
 import ProjectBackendEN from './pages/en/ProjectBackendDevPage';
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/en/about" element={<AboutPageEN />}></Route>
         <Route path="/id/about" element={<AboutPageID />}></Route>
         <Route path="/en/web-dev" element={<ProjectWebDevEN />}></Route>
+        <Route path="/id/web-dev" element={<ProjectWebDevID />}></Route>
         <Route path="/en/mobile-dev" element={<ProjectMobileEN />}></Route>
         <Route path="/en/backend-dev" element={<ProjectBackendEN />}></Route>
       </Routes>
