@@ -7,9 +7,13 @@ import TestPage from './pages/TestPage';
 import LandingPageEN from './pages/en/LandingPage';
 import LandingPageID from './pages/id/LandingPage';
 import AboutPageEN from './pages/en/AboutPage';
+import AboutPageID from './pages/id/AboutPage';
 import ProjectWebDevEN from './pages/en/ProjectWebDevPage';
+import ProjectWebDevID from './pages/id/ProjectWebDevPage';
 import ProjectMobileEN from './pages/en/ProjectMobileDevPage';
+import ProjectMobileID from './pages/id/ProjectMobileDevPage';
 import ProjectBackendEN from './pages/en/ProjectBackendDevPage';
+import ProjectBackendID from './pages/id/ProjectBackendDevPage';
 
 function App() {
   return (
@@ -20,9 +24,13 @@ function App() {
         <Route path="/en" element={<LandingPageEN />}></Route>
         <Route path="/id" element={<LandingPageID />}></Route>
         <Route path="/en/about" element={<AboutPageEN />}></Route>
+        <Route path="/id/about" element={<AboutPageID />}></Route>
         <Route path="/en/web-dev" element={<ProjectWebDevEN />}></Route>
+        <Route path="/id/web-dev" element={<ProjectWebDevID />}></Route>
         <Route path="/en/mobile-dev" element={<ProjectMobileEN />}></Route>
+        <Route path="/id/mobile-dev" element={<ProjectMobileID />}></Route>
         <Route path="/en/backend-dev" element={<ProjectBackendEN />}></Route>
+        <Route path="/id/backend-dev" element={<ProjectBackendID />}></Route>
       </Routes>
     </div>
   );

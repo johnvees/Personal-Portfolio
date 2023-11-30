@@ -10,20 +10,21 @@ export default function Service() {
       <div className="col-sm-12 col-md-12 col-lg-12 text-center">
         <Fade bottom cascade>
           <div>
-            <h4>SERVICES</h4>
+            <h4>LAYANAN</h4>
             <h2>
-              Comprehensive Development Expertise: Your Partner for Mobile, Web,
-              and Backend Solutions
+              Keahlian Pengembangan Komprehensif: Partner Anda untuk Solusi
+              Mobile, Web, dan Backend
             </h2>
             <div className="row align-items-center mb-5">
               <div className="col-md-1 col-lg-2 d-none d-md-block"></div>
               <div className="col-sm-12 col-md-10 col-lg-8">
                 <h5>
-                  As a developer, I'm passionate about crafting dynamic
-                  solutions spanning mobile apps, web design, and backend
-                  systems. Let's collaborate to transform your ideas into
-                  exceptional digital realities that elevate your digital
-                  presence and drive success in the tech landscape.
+                  Sebagai seorang pengembang, saya memiliki minat untuk
+                  menciptakan solusi dinamis yang melibatkan aplikasi mobile,
+                  desain web, dan sistem backend. Mari berkolaborasi untuk
+                  mengubah ide-ide Anda menjadi realitas digital yang luar
+                  biasa, meningkatkan kehadiran digital Anda, dan mencapai
+                  kesuksesan dalam dunia teknologi.
                 </h5>
               </div>
               <div className="col-md-1 col-lg-2 d-none d-md-block"></div>
@@ -40,9 +41,10 @@ export default function Service() {
               />
               <h3 className="h2 mb-3">Mobile Development</h3>
               <h5>
-                Using React Native, I create mobile apps that seamlessly run on
-                both Android and iOS, saving time and resources while delivering
-                an exceptional user experience.
+                Dengan menggunakan React Native, saya membuat aplikasi mobile
+                yang berjalan mulus di kedua platform Android dan iOS, menghemat
+                waktu dan sumber daya selagi memberikan pengalaman pengguna yang
+                luar biasa.
               </h5>
             </div>
           </Fade>
@@ -51,9 +53,9 @@ export default function Service() {
               <img className="mb-4" src={ICWebDev} alt="Web Development Icon" />
               <h3 className="h2 mb-3">Web Development</h3>
               <h5>
-                Utilizing the MERN stack, I develop web applications that embody
-                efficiency and excellence, providing a seamless experience for
-                users across various platforms.
+                Dengan menggunakan teknologi MERN, saya mengembangkan aplikasi
+                web yang mencerminkan efisiensi dan keunggulan, memberikan
+                pengalaman yang mulus bagi pengguna di berbagai platform.
               </h5>
             </div>
           </Fade>
@@ -66,9 +68,9 @@ export default function Service() {
               />
               <h3 className="h2 mb-3">Backend Development</h3>
               <h5>
-                With NodeJS and the ExpressJS framework, I specialize in
-                crafting efficient and powerful backend solutions that drive the
-                seamless functionality of web applications.
+                Dengan NodeJS dan kerangka kerja ExpressJS, saya mengkhususkan
+                diri dalam menciptakan solusi backend yang efisien dan powerful,
+                mendorong fungsionalitas mulus pada berbagai platform web.
               </h5>
             </div>
           </Fade>

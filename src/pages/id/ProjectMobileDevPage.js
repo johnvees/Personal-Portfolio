@@ -1,73 +1,106 @@
 import React, { useState } from 'react';
 import Fade from 'react-reveal/Fade';
-import Header from '../../parts/en/Header';
-import Footer from '../../parts/en/Footer';
-import ilBackendProject1 from '../../assets/images/ilBackendProject1.webp';
-import ilBackendProject2 from '../../assets/images/ilBackendProject2.webp';
+import Header from '../../parts/id/Header';
+import Footer from '../../parts/id/Footer';
+import ilMobileProject1 from '../../assets/images/ilMobileProject1.webp';
+import ilMobileProject2 from '../../assets/images/ilMobileProject2.webp';
+import ilMobileProject3 from '../../assets/images/ilMobileProject3.webp';
 import icGithub from '../../assets/images/iconGithub.svg';
 import icArrowGoUp from '../../assets/images/iconArrowGoUp.svg';
-import icMongoDB from '../../assets/images/icMongoDB.svg';
-import icExpressJS from '../../assets/images/icExpressJS.svg';
-import icNodeJS from '../../assets/images/icNodeJS.svg';
 import icPolygonLeft from '../../assets/images/icPolygonLeft.svg';
 import icPolygonRight from '../../assets/images/icPolygonRight.svg';
-
-export default function ProjectWebDevPage() {
+import icReact from '../../assets/images/icReact.svg';
+import icRedux from '../../assets/images/icRedux.svg';
+import icFirebase from '../../assets/images/icFirebase.svg';
+import icJava from '../../assets/images/icJava.svg';
+import icSQLite from '../../assets/images/icSQLite.svg';
+import icAndroid from '../../assets/images/icAndroid.svg';
+ 
+export default function ProjectMobileDevPage() {
   const projectList = [
     {
-      id: 7,
-      projectTitle: 'Indonesia News Curator - ADMIN',
+      id: 4,
+      projectTitle: 'Second Hand App',
       projectDesc:
-        'This plaform is designed for the needs of Indonesia News Curator Backend/Admin Interface.',
-      projectCategory: 'Backend Development',
-      projectBanner: ilBackendProject1,
+        'Aplikasi ini berfungsi sebagai market place, khususnya untuk barang bekas. Platform ini menawarkan berbagai kategori kebutuhan, memungkinkan pengguna yang mendaftar di aplikasi untuk berperan sebagai penjual dan pembeli menggunakan satu akun. Platform ini memfasilitasi hubungan antara penjual dan pembeli, memungkinkan mereka untuk bernegosiasi mengenai barang dan melakukan transaksi secara langsung di luar platform',
+      projectCategory: 'Mobile Development',
+      projectBanner: ilMobileProject1,
       projectLink: '',
-      githubLink: 'https://github.com/johnvees/TA-Berita-Server',
-      startDate: '2023-06-18',
-      endDate: '2023-07-06',
+      githubLink: 'https://github.com/johnvees/FinalProject-SecondHand',
+      startDate: '2022-06-12',
+      endDate: '2022-07-26',
       techStack: [
         {
-          id: 8,
-          name: 'MongoDB',
-          image: icMongoDB,
+          id: 1,
+          name: 'React',
+          image: icReact,
         },
         {
-          id: 9,
-          name: 'ExpressJS',
-          image: icExpressJS,
+          id: 2,
+          name: 'Redux',
+          image: icRedux,
         },
         {
-          id: 10,
-          name: 'NodeJS',
-          image: icNodeJS,
+          id: 4,
+          name: 'Firebase',
+          image: icFirebase,
         },
       ],
     },
     {
-      id: 8,
-      projectTitle: 'PT. Weba International Company Profile - ADMIN',
-      projectDesc: `This plaform is designed for the needs of PT. Weba International, encompassing a company profile and product catalog Backend/Admin Interface.`,
-      projectCategory: 'Backend Development',
-      projectBanner: ilBackendProject2,
+      id: 5,
+      projectTitle: 'Money Saving',
+      projectDesc:
+        'Money Saving adalah aplikasi manajemen keuangan yang dirancang untuk menyederhanakan pencatatan transaksi keuangan harian. Dengan melakukan pencatatan keuangan harian secara digital, pengguna dapat mengelola dan memantau pengeluaran dan pendapatan keuangan harian mereka dengan efisien. Semua entri akan dicatat dengan akurat, memberikan gambaran komprehensif, termasuk total jumlah dan perbandingan persentase',
+      projectCategory: 'Mobile Development',
+      projectBanner: ilMobileProject2,
       projectLink: '',
-      githubLink: 'https://github.com/johnvees/WEBA-Admin',
-      startDate: '2022-06-19',
-      endDate: '2022-06-28',
+      githubLink: 'https://github.com/johnvees/MoneySaving',
+      startDate: '2022-07-22',
+      endDate: '2021-07-04',
       techStack: [
         {
-          id: 8,
-          name: 'MongoDB',
-          image: icMongoDB,
+          id: 5,
+          name: 'Java',
+          image: icJava,
         },
         {
-          id: 9,
-          name: 'ExpressJS',
-          image: icExpressJS,
+          id: 6,
+          name: 'SQLite',
+          image: icSQLite,
         },
         {
-          id: 10,
-          name: 'NodeJS',
-          image: icNodeJS,
+          id: 7,
+          name: 'Android',
+          image: icAndroid,
+        },
+      ],
+    },
+    {
+      id: 6,
+      projectTitle: 'My Doctor',
+      projectDesc: `Aplikasi ini adalah aplikasi Konsultasi Dokter Online. Mengingat banyaknya masalah kesehatan di masyarakat dan upaya untuk meminimalkan waktu dan biaya, banyak individu memilih opsi instan untuk berkonsultasi langsung dengan dokter bersertifikat melalui sarana online`,
+      projectCategory: 'Mobile Development',
+      projectBanner: ilMobileProject3,
+      projectLink: '',
+      githubLink: 'https://github.com/johnvees/HiDoc',
+      startDate: '2021-03-22',
+      endDate: '2021-12-24',
+      techStack: [
+        {
+          id: 1,
+          name: 'React',
+          image: icReact,
+        },
+        {
+          id: 2,
+          name: 'Redux',
+          image: icRedux,
+        },
+        {
+          id: 4,
+          name: 'Firebase',
+          image: icFirebase,
         },
       ],
     },
@@ -115,7 +148,7 @@ export default function ProjectWebDevPage() {
       <section className="container-project pt-5 pb-5">
         <Fade bottom cascade>
           <div className="text-center mb-4">
-            <h2>Backend Development Projects</h2>
+            <h2>Proyek Mobile Development</h2>
           </div>
         </Fade>
         <Fade bottom cascade>
@@ -197,7 +230,7 @@ export default function ProjectWebDevPage() {
                               className="btn btn-primary"
                               style={{ width: '100%' }}
                             >
-                              View in Github{' '}
+                              Lihat di Github{' '}
                               <img src={icGithub} alt="Github Icon" />
                             </button>
                           </a>
@@ -215,7 +248,7 @@ export default function ProjectWebDevPage() {
                                 className="btn btn-warning"
                                 style={{ width: '100%' }}
                               >
-                                View Project{' '}
+                                Lihat Project{' '}
                                 <img src={icArrowGoUp} alt="Arrow Go Up Icon" />
                               </button>
                             </a>
@@ -227,7 +260,7 @@ export default function ProjectWebDevPage() {
                               style={{ width: '100%' }}
                               disabled
                             >
-                              View Project{' '}
+                              Lihat Project{' '}
                               <img src={icArrowGoUp} alt="Arrow Go Up Icon" />
                             </button>
                           )}
@@ -272,7 +305,7 @@ export default function ProjectWebDevPage() {
                                 className="btn btn-warning"
                                 style={{ width: '100%' }}
                               >
-                                View Project{' '}
+                                Lihat Project{' '}
                                 <img src={icArrowGoUp} alt="Arrow Go Up Icon" />
                               </button>
                             </a>
@@ -284,7 +317,7 @@ export default function ProjectWebDevPage() {
                               style={{ width: '100%' }}
                               disabled
                             >
-                              View Project{' '}
+                              Lihat Project{' '}
                               <img src={icArrowGoUp} alt="Arrow Go Up Icon" />
                             </button>
                           )}
@@ -300,7 +333,7 @@ export default function ProjectWebDevPage() {
                               className="btn btn-primary"
                               style={{ width: '100%' }}
                             >
-                              View in Github{' '}
+                              Lihat di Github{' '}
                               <img src={icGithub} alt="Github Icon" />
                             </button>
                           </a>

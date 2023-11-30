@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { Component } from 'react';
+import Header from '../../parts/id/Header';
+import Hero from '../../parts/id/About/Hero';
+import Content from '../../parts/id/About/Content';
+import Footer from '../../parts/id/Footer';
 
-export default function AboutPage() {
-  return (
-    <div>
-      <p>ini about page</p>
-    </div>
-  )
+export default class AboutPage extends Component {
+  render() {
+    return (
+      <div>
+        <Header {...this.props}></Header>
+        <Hero></Hero>
+        <Content></Content>
+        <Footer {...this.props}></Footer>
+      </div>
+    );
+  }
 }

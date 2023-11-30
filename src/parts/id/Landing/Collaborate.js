@@ -24,8 +24,8 @@ export default function Collaborate() {
         >
           <div className="text-center">
             <h1>
-              Transform Your Ideas into Digital Magic Lets Collaborate for
-              Success!
+              Ubah Ide-ide Anda menjadi Keajaiban Digital. Mari Berkolaborasi
+              dengan Saya untuk Kesuksesan!
             </h1>
             <div className="row align-items-center mt-4">
               <div className="col-sm-2 col-md-2 col-lg-2 d-none d-md-block"></div>
@@ -40,7 +40,7 @@ export default function Collaborate() {
                     className="btn btn-primary"
                     style={{ width: '100%' }}
                   >
-                    Get In Touch With Me!
+                    Hubungi Saya!
                   </button>
                 </a>
               </div>
