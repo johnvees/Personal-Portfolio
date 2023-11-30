@@ -3,7 +3,7 @@ import Footer from '../../parts/id/Footer';
 import Header from '../../parts/id/Header';
 import Hero from '../../parts/id/Landing/Hero';
 import About from '../../parts/id/Landing/About';
-import Service from '../../parts/en/Landing/Service';
+import Service from '../../parts/id/Landing/Service';
 import Project from '../../parts/en/Landing/Project';
 import Collaborate from '../../parts/en/Landing/Collaborate';
 
