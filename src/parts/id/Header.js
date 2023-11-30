@@ -15,7 +15,7 @@ export default function Header() {
       <div className="container-fluid">
         <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-lg p-0">
           <div className="container-logo">
-            <a href="/en">
+            <a href="/id">
               <img src={LogoBlack} alt="" />
             </a>
           </div>
@@ -37,19 +37,19 @@ export default function Header() {
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav ml-auto">
-              <li className={`nav-item${getNavLinkClass('/en')}`}>
-                <a className="nav-link" href="/en">
+              <li className={`nav-item${getNavLinkClass('/id')}`}>
+                <a className="nav-link" href="/id">
                   Beranda
                 </a>
               </li>
-              <li className={`nav-item${getNavLinkClass('/en/about')}`}>
-                <a className="nav-link" href="/en/about">
+              <li className={`nav-item${getNavLinkClass('/id/about')}`}>
+                <a className="nav-link" href="/id/about">
                   Tentang
                 </a>
               </li>
               <li
                 className={`nav-item${getNavLinkClass(
-                  '/en/web-dev' || '/en/mobile-dev' || '/en/backend-dev'
+                  '/id/web-dev' || '/id/mobile-dev' || '/id/backend-dev'
                 )} dropdown`}
               >
                 <a
@@ -64,30 +64,30 @@ export default function Header() {
                 <div className="dropdown-menu">
                   <a
                     className={`dropdown-item${getNavLinkClass(
-                      '/en/mobile-dev'
+                      '/id/mobile-dev'
                     )}`}
-                    href="/en/mobile-dev"
+                    href="/id/mobile-dev"
                   >
                     Mobile Development
                   </a>
                   <a
-                    className={`dropdown-item${getNavLinkClass('/en/web-dev')}`}
-                    href="/en/web-dev"
+                    className={`dropdown-item${getNavLinkClass('/id/web-dev')}`}
+                    href="/id/web-dev"
                   >
                     Web Development
                   </a>
                   <a
                     className={`dropdown-item${getNavLinkClass(
-                      '/en/backend-dev'
+                      '/id/backend-dev'
                     )}`}
-                    href="/en/backend-dev"
+                    href="/id/backend-dev"
                   >
                     Backend Development
                   </a>
                 </div>
               </li>
-              {/* <li className={`nav-item${getNavLinkClass('/en/contact')}`}>
-                <a className="nav-link" href="/en?scrollTo=contact-section">
+              {/* <li className={`nav-item${getNavLinkClass('/id/contact')}`}>
+                <a className="nav-link" href="/id?scrollTo=contact-section">
                   Hubungi Saya
                 </a>
               </li> */}
