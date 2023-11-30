@@ -94,7 +94,7 @@ export default function Header() {
             </ul>
             <div className="d-flex ml-auto">
               <div className="container-language p-0">
-                <a href="/id">
+                <a href="/en">
                   <div className="button row align-items-center justify-content-center m-0 p-0">
                     <h5 className="m-0 mr-2">EN</h5>
                     <img src={LanguageHandler} alt="" />
